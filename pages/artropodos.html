@@ -3,300 +3,376 @@
         <h2>Artrópodos</h2>
     </a>
 
-    <div class="carousel-container">
-        <button class="carousel-btn left-btn" onclick="moveLeft('artropodos')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
+    <!-- Subgrupo de Arácnidos -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Arácnidos</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('aracnidos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
-        <!-- Grilla de animales -->
-        <div id="artropodos" class="animal-grid-wrapper">
-            <div class="animal-grid">
-                <div class="animal-card" onclick="showDetails('CangrejoAzul')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/callinectes_sapidus.jpg" alt="Cangrejo Azul">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Cangrejo Azul (Callinectes sapidus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Tarantula')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/grammostola_pulchra.webp" alt="Tarántula Negra">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Tarántula Negra (Grammostola pulchra)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CiempiésGigante')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/scolopendra_gigantea.jpg" alt="Ciempiés Gigante">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Ciempiés Gigante (Scolopendra gigantea)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('EscorpionImperial')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/pandinus_imperator.avif" alt="Escorpión Emperador">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Escorpión Emperador (Pandinus imperator)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CangrejoRojo')">
-                    <div class="animal-card-img crustaceos">
-                        <img src="img/procambarus_clarkii.jpg" alt="Cangrejo Rojo">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Cangrejo Rojo (Procambarus clarkii)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('PulgaAgua')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/daphnia_pulex.jpg" alt="Pulga de Agua">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Pulga de Agua (Daphnia pulex)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('LangostaComún')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/homarus_americanus.jpg" alt="Langosta Común">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Langosta Común (Homarus americanus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('ArañaLobo')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/lycosidae.jpg" alt="Araña Lobo">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Araña Lobo (Lycosidae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CaracolAcuario')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/ampullariidae.jpg" alt="Caracol de Acuario">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Caracol de Acuario (Ampullariidae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('EscarabajoTigre')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/cicindelinae.jpeg" alt="Escarabajo Tigre">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Escarabajo Tigre (Cicindelinae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('ArañaCazadora')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/sparassidae.jpeg" alt="Araña Cazadora">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Araña Cazadora (Sparassidae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('LangostaEspinosa')">
-                    <div class="animal-card-img artropodos">
-                        <img src="img/palinuridae.jpg" alt="Langosta Espinosa">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Langosta Espinosa (Palinuridae)</h3>
-                    </div>
-                </div>
-                <!-- /*insectos*/ -->
-                <div class="animal-card" onclick="showDetails('MariposaMonarca')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/danaus_plexippus.jpg" alt="Mariposa Monarca">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Mariposa Monarca (Danaus plexippus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CangrejoGigante')">
-                    <div class="animal-card-img crustaceos">
-                        <img src="img/macrocheira_kaempferi.jpg" alt="Cangrejo Gigante Japonés">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Cangrejo Gigante Japonés (Macrocheira kaempferi)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('AbejaMiel')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/apis_mellifera.jpg" alt="Abeja de la Miel">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Abeja de la Miel (Apis mellifera)</h3>
-                    </div>
-                </div>
-
-                <div class="animal-card" onclick="showDetails('Grillo')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/gryllus_bimaculatus.jpg" alt="Grillo">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Grillo (Gryllus bimaculatus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('MantisReligiosa')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/tenodera_sinensis.jpg" alt="Mantis Religiosa">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Mantis Religiosa (Tenodera sinensis)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('EscarabajoHercules')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/dynastes_hercules.jpg" alt="Escarabajo Hércules">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Escarabajo Hércules (Dynastes hercules)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Saltamontes')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/caelifera.jpg" alt="Saltamontes">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Saltamontes (Caelifera)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Solífugo')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/solifugae.JPG" alt="Solífugo">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Solífugo (Solifugae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('MariposaAtlas')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/attacus_atlas.jpg" alt="Mariposa Atlas">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Mariposa Atlas (Attacus atlas)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Cucaracha')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/blattodea.jpg" alt="Cucaracha">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Cucaracha (Blattodea)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Hormiga')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/formicidae.jpg" alt="Hormiga">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Hormiga (Formicidae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Gamba')">
-                    <div class="animal-card-img crustaceos">
-                        <img src="img/pandalus_borealis.jpg" alt="Gamba">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Gamba (Pandalus borealis)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Libelula')">
-                    <div class="animal-card-img insectos">
-                        <img src="img/anisoptera.jpg" alt="Libélula">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Libélula (Anisoptera)</h3>
-                    </div>
-                </div>
-                <!-- /*aracnidos*/ -->
-                <div class="animal-card" onclick="showDetails('TarantulaGoliat')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/theraphosa_blondi.jpeg" alt="Tarántula Goliat">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Tarántula Goliat (Theraphosa blondi)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('ViudaNegra')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/latrodectus_mactans.jpg" alt="Viuda Negra">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Viuda Negra (Latrodectus mactans)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CangrejoErmitaño')">
-                    <div class="animal-card-img crustaceos">
-                        <img src="img/coenobita_clypeatus.jfif" alt="Cangrejo Ermitaño">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Cangrejo Ermitaño (Coenobita clypeatus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('ArañaReclusa')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/loxosceles_reclusa.jpg" alt="Araña Reclusa">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Araña Reclusa (Loxosceles reclusa)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Ácaro')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/acarina.jpg" alt="Ácaro">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Ácaro (Acarina)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('EscorpionLatigo')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/amblypygi.jpg" alt="Escorpión Látigo">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Escorpión Látigo (Amblypygi)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CamaronMantis')">
-                    <div class="animal-card-img crustaceos">
-                        <img src="img/odontodactylus_scyllarus.jpg" alt="Camarón Mantis">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Camarón Mantis (Odontodactylus scyllarus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('ArañaBanana')">
-                    <div class="animal-card-img aracnidos">
-                        <img src="img/phoneutria.jpeg" alt="Araña de Banano">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Araña de Banano (Phoneutria)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CamarónCereza')">
-                    <div class="animal-card-img crustaceos">
-                        <img src="img/neocaridina_davidi.jpg" alt="Camarón Cereza">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Camarón Cereza (Neocaridina davidi)</h3>
+            <div id="aracnidos" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Tarántula Negra')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/grammostola_pulchra.webp" alt="Tarántula Negra">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Tarántula Negra (Grammostola pulchra)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Araña Lobo')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/lycosidae.jpg" alt="Araña Lobo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Araña Lobo (Lycosidae)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Solífugo')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/solifugae.JPG" alt="Solífugo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Solífugo (Solifugae)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Tarántula Goliat')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/theraphosa_blondi.jpeg" alt="Tarántula Goliat">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Tarántula Goliat (Theraphosa blondi)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Viuda Negra')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/latrodectus_mactans.jpg" alt="Viuda Negra">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Viuda Negra (Latrodectus mactans)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Araña Reclusa')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/loxosceles_reclusa.jpg" alt="Araña Reclusa">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Araña Reclusa (Loxosceles reclusa)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Ácaro')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/acarina.jpg" alt="Ácaro">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Ácaro (Acarina)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Escorpión Látigo')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/amblypygi.jpg" alt="Escorpión Látigo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Escorpión Látigo (Amblypygi)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Araña de Banano')">
+                        <div class="animal-card-img aracnidos">
+                            <img src="img/phoneutria.jpeg" alt="Araña de Banano">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Araña de Banano (Phoneutria)</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <button class="carousel-btn right-btn" onclick="moveRight('artropodos')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
+            <button class="carousel-btn right-btn" onclick="moveRight('aracnidos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
     </div>
+
+    <!-- Subgrupo de Crustáceos -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Crustáceos</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('crustaceos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="crustaceos" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Cangrejo Azul')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/callinectes_sapidus.jpg" alt="Cangrejo Azul">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Cangrejo Azul (Callinectes sapidus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Cangrejo Rojo')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/procambarus_clarkii.jpg" alt="Cangrejo Rojo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Cangrejo Rojo (Procambarus clarkii)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Langosta Común')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/homarus_americanus.jpg" alt="Langosta Común">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Langosta Común (Homarus americanus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Cangrejo Ermitaño')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/coenobita_clypeatus.jfif" alt="Cangrejo Ermitaño">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Cangrejo Ermitaño (Coenobita clypeatus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Langosta Espinosa')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/palinuridae.jpg" alt="Langosta Espinosa">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Langosta Espinosa (Palinuridae)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Gamba')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/pandalus_borealis.jpg" alt="Gamba">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Gamba (Pandalus borealis)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Cangrejo Gigante Japonés')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/macrocheira_kaempferi.jpg" alt="Cangrejo Gigante Japonés">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Cangrejo Gigante Japonés (Macrocheira kaempferi)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Camarón Mantis')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/odontodactylus_scyllarus.jpg" alt="Camarón Mantis">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Camarón Mantis (Odontodactylus scyllarus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Camarón Cereza')">
+                        <div class="animal-card-img crustaceos">
+                            <img src="img/neocaridina_davidi.jpg" alt="Camarón Cereza">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Camarón Cereza (Neocaridina davidi)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('crustaceos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Subgrupo de Insectos -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Insectos</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('insectos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="insectos" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Mariposa Monarca')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/danaus_plexippus.jpg" alt="Mariposa Monarca">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Mariposa Monarca (Danaus plexippus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Abeja de la Miel')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/apis_mellifera.jpg" alt="Abeja de la Miel">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Abeja de la Miel (Apis mellifera)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Grillo')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/gryllus_bimaculatus.jpg" alt="Grillo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Grillo (Gryllus bimaculatus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Mantis Religiosa')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/tenodera_sinensis.jpg" alt="Mantis Religiosa">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Mantis Religiosa (Tenodera sinensis)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Escarabajo Hércules')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/dynastes_hercules.jpg" alt="Escarabajo Hércules">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Escarabajo Hércules (Dynastes hercules)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Saltamontes')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/caelifera.jpg" alt="Saltamontes">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Saltamontes (Caelifera)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Libélula')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/anisoptera.jpg" alt="Libélula">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Libélula (Anisoptera)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Mariposa Atlas')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/attacus_atlas.jpg" alt="Mariposa Atlas">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Mariposa Atlas (Attacus atlas)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Cucaracha')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/blattodea.jpg" alt="Cucaracha">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Cucaracha (Blattodea)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Hormiga')">
+                        <div class="animal-card-img insectos">
+                            <img src="img/formicidae.jpg" alt="Hormiga">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Hormiga (Formicidae)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('insectos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Subgrupo de Otros Artrópodos 
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Otros Artrópodos</h3> 
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('otros')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="otros" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Ciempiés Gigante')">
+                        <div class="animal-card-img artropodos">
+                            <img src="img/scolopendra_gigantea.jpg" alt="Ciempiés Gigante">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Ciempiés Gigante (Scolopendra gigantea)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Escorpión Emperador')">
+                        <div class="animal-card-img artropodos">
+                            <img src="img/pandinus_imperator.avif" alt="Escorpión Emperador">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Escorpión Emperador (Pandinus imperator)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Pulga de Agua')">
+                        <div class="animal-card-img artropodos">
+                            <img src="img/daphnia_pulex.jpg" alt="Pulga de Agua">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Pulga de Agua (Daphnia pulex)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Caracol de Acuario')">
+                        <div class="animal-card-img artropodos">
+                            <img src="img/ampullariidae.jpg" alt="Caracol de Acuario">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Caracol de Acuario (Ampullariidae)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Escarabajo Tigre')">
+                        <div class="animal-card-img artropodos">
+                            <img src="img/cicindelinae.jpeg" alt="Escarabajo Tigre">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Escarabajo Tigre (Cicindelinae)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Araña Cazadora')">
+                        <div class="animal-card-img artropodos">
+                            <img src="img/sparassidae.jpeg" alt="Araña Cazadora">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Araña Cazadora (Sparassidae)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('otros')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div> 
+    </div> -->
+
 </section>

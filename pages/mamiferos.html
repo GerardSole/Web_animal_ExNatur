@@ -3,98 +3,152 @@
         <h2>Mamíferos</h2>
     </a>
 
+    <!-- Subgrupo de Roedores -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Roedores</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('roedores')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
-    <div id="content" class="carousel-container">
-        <button class="carousel-btn left-btn" onclick="moveLeft('mamiferos')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-
-        <div id="mamiferos" class="animal-grid-wrapper">
-            <div class="animal-grid">
-                <div class="animal-card" onclick="showDetails('Petauro')">
-                    <div class="animal-card-img">
-                        <img src="img/petaurus_breviceps.jpg" alt="Petauro">
+            <div id="roedores" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card"
+                        onclick="window.location.href='pages/details/ficha_animal.html?animal=jerbo'">
+                        <div class="animal-card-img">
+                            <img src="img/meriones_unguiculatus.jpg" alt="Jerbo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Jerbo (Meriones unguiculatus)</h3>
+                        </div>
                     </div>
-                    <div class="animal-card-body">
-                        <h3>Petauro del azúcar (Petaurus breviceps)</h3>
+                    <div class="animal-card" onclick="showDetails('Ratón')">
+                        <div class="animal-card-img">
+                            <img src="img/acomys_cahirinus.jpg" alt="Ratón">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Ratón espinoso egipcio (Acomys cahirinus)</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="animal-card" onclick="window.location.href='pages/details/ficha_animal.html?animal=jerbo'">
-                    <div class="animal-card-img">
-                        <img src="img/meriones_unguiculatus.jpg" alt="Jerbo">
+                    <div class="animal-card" onclick="showDetails('Chinchilla')">
+                        <div class="animal-card-img">
+                            <img src="img/chinchilla_lanigera.jpg" alt="Chinchilla">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Chinchilla (Chinchilla lanigera)</h3>
+                        </div>
                     </div>
-                    <div class="animal-card-body">
-                        <h3>Jerbo (Meriones unguiculatus)</h3>
+                    <div class="animal-card" onclick="showDetails('Degú')">
+                        <div class="animal-card-img">
+                            <img src="img/octon_degus.jpg" alt="Degú">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Degú (Octodon degus)</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Ratón')">
-                    <div class="animal-card-img">
-                        <img src="img/acomys_cahirinus.jpg" alt="Ratón">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Ratón espinoso egipcio (Acomys cahirinus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Hurón')">
-                    <div class="animal-card-img">
-                        <img src="img/mustela_putorius_furo.jpg" alt="Hurón">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Hurón (Mustela putorius furo)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Erizo')">
-                    <div class="animal-card-img">
-                        <img src="img/atelerix_albiventris.jpg" alt="Erizo">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Erizo enano africano (Atelerix albiventris)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Musaraña')">
-                    <div class="animal-card-img">
-                        <img src="img/macroscelididae.jpg" alt="Musaraña">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Musaraña elefante (Macroscelididae)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Chinchilla')">
-                    <div class="animal-card-img">
-                        <img src="img/chinchilla_lanigera.jpg" alt="Chinchilla">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Chinchilla (Chinchilla lanigera)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('Degú')">
-                    <div class="animal-card-img">
-                        <img src="img/octon_degus.jpg" alt="Degú">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Degú (Octodon degus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('RataArena')">
-                    <div class="animal-card-img">
-                        <img src="img/psammomys_obesus.jpg" alt="Rata de la arena">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Rata de la arena (Psammomys obesus)</h3>
+                    <div class="animal-card" onclick="showDetails('Rata de la Arena')">
+                        <div class="animal-card-img">
+                            <img src="img/psammomys_obesus.jpg" alt="Rata de la arena">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Rata de la arena (Psammomys obesus)</h3>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('roedores')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
-
-
-        <button class="carousel-btn right-btn" onclick="moveRight('mamiferos')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
     </div>
+
+    <!-- Subgrupo de Carnívoros -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Carnívoros</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('carnivoros')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="carnivoros" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Hurón')">
+                        <div class="animal-card-img">
+                            <img src="img/mustela_putorius_furo.jpg" alt="Hurón">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Hurón (Mustela putorius furo)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Musaraña')">
+                        <div class="animal-card-img">
+                            <img src="img/macroscelididae.jpg" alt="Musaraña">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Musaraña elefante (Macroscelididae)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('carnivoros')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Subgrupo de Pequeños Mamíferos -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Pequeños Mamíferos</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('pequenos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="pequenos" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Petauro')">
+                        <div class="animal-card-img">
+                            <img src="img/petaurus_breviceps.jpg" alt="Petauro">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Petauro del azúcar (Petaurus breviceps)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Erizo')">
+                        <div class="animal-card-img">
+                            <img src="img/atelerix_albiventris.jpg" alt="Erizo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Erizo enano africano (Atelerix albiventris)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('pequenos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
 </section>

@@ -3,98 +3,153 @@
         <h2>Reptiles</h2>
     </a>
 
+    <!-- Subgrupo de Lagartos -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Lagartos</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('lagartos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
-    <div class="carousel-container">
-        <button class="carousel-btn left-btn" onclick="moveLeft('reptiles')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-
-        <!-- Grilla de animales -->
-        <div id="reptiles" class="animal-grid-wrapper">
-            <div class="animal-grid">
-                <div class="animal-card" onclick="showDetails('GeckoLeopardo')">
-                    <div class="animal-card-img">
-                        <img src="img/eublepharis-macularius.webp" alt="Gecko Leopardo">
+            <div id="lagartos" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Gecko Leopardo')">
+                        <div class="animal-card-img">
+                            <img src="img/eublepharis-macularius.webp" alt="Gecko Leopardo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Gecko Leopardo (Eublepharis macularius)</h3>
+                        </div>
                     </div>
-                    <div class="animal-card-body">
-                        <h3>Gecko Leopardo (Eublepharis macularius)</h3>
+                    <div class="animal-card" onclick="showDetails('Dragón Barbudo')">
+                        <div class="animal-card-img">
+                            <img src="img/pogona_vitticeps.jpg" alt="Dragón Barbudo">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Dragón Barbudo (Pogona vitticeps)</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('DragonBarbudo')">
-                    <div class="animal-card-img">
-                        <img src="img/pogona_vitticeps.jpg" alt="Dragón Barbudo">
+                    <div class="animal-card" onclick="showDetails('Camaleón Velado')">
+                        <div class="animal-card-img">
+                            <img src="img/chamaeleo_calyptratus.jpg" alt="Camaleón Velado">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Camaleón Velado (Chamaeleo calyptratus)</h3>
+                        </div>
                     </div>
-                    <div class="animal-card-body">
-                        <h3>Dragón Barbudo (Pogona vitticeps)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('SerpienteMaizal')">
-                    <div class="animal-card-img">
-                        <img src="img/pantherophis_guttatus.jpg" alt="Serpiente del Maizal">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Serpiente del Maizal (Pantherophis guttatus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('CamaleonVelado')">
-                    <div class="animal-card-img">
-                        <img src="img/chamaeleo_calyptratus.jpg" alt="Camaleón Velado">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Camaleón Velado (Chamaeleo calyptratus)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('TortugaRusa')">
-                    <div class="animal-card-img">
-                        <img src="img/testudo_horsfieldii.jpeg" alt="Tortuga Rusa">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Tortuga Rusa (Testudo horsfieldii)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('BoaConstrictrix')">
-                    <div class="animal-card-img">
-                        <img src="img/boa_constrictor.jpg" alt="Boa constrictor">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Boa Constrictor (Boa constrictor)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('IguanaVerde')">
-                    <div class="animal-card-img">
-                        <img src="img/iguana_iguana.jpg" alt="Iguana Verde">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Iguana Verde (Iguana iguana)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('TortugaOrejasRojas')">
-                    <div class="animal-card-img">
-                        <img src="img/trachemys_scripta_elegans.jpg" alt="Tortuga de Orejas Rojas">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Tortuga de Orejas Rojas (Trachemys scripta elegans)</h3>
-                    </div>
-                </div>
-                <div class="animal-card" onclick="showDetails('SerpienteRey')">
-                    <div class="animal-card-img">
-                        <img src="img/lampropeltis_getula.jpg" alt="Serpiente Rey">
-                    </div>
-                    <div class="animal-card-body">
-                        <h3>Serpiente Rey (Lampropeltis getula)</h3>
+                    <div class="animal-card" onclick="showDetails('Iguana Verde')">
+                        <div class="animal-card-img">
+                            <img src="img/iguana_iguana.jpg" alt="Iguana Verde">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Iguana Verde (Iguana iguana)</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <button class="carousel-btn right-btn" onclick="moveRight('reptiles')">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
+            <button class="carousel-btn right-btn" onclick="moveRight('lagartos')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
     </div>
+
+    <!-- Subgrupo de Serpientes -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Serpientes</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('serpientes')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="serpientes" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Boa constrictor')">
+                        <div class="animal-card-img">
+                            <img src="img/boa_constrictor.jpg" alt="Boa Constrictor">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Boa Constrictor (Boa constrictor)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Serpiente del Maizal')">
+                        <div class="animal-card-img">
+                            <img src="img/pantherophis_guttatus.jpg" alt="Serpiente del Maizal">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Serpiente del Maizal (Pantherophis guttatus)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Serpiente Rey')">
+                        <div class="animal-card-img">
+                            <img src="img/lampropeltis_getula.jpg" alt="Serpiente Rey">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Serpiente Rey (Lampropeltis getula)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('serpientes')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Subgrupo de Tortugas -->
+    <div class="subgrupo-animal">
+        <h3 style="text-align: center;">Tortugas</h3> <!-- Centramos el título de la subcategoría -->
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn" onclick="moveLeft('tortugas')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="tortugas" class="animal-grid-wrapper">
+                <div class="animal-grid">
+                    <div class="animal-card" onclick="showDetails('Tortuga Rusa')">
+                        <div class="animal-card-img">
+                            <img src="img/testudo_horsfieldii.jpeg" alt="Tortuga Rusa">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Tortuga Rusa (Testudo horsfieldii)</h3>
+                        </div>
+                    </div>
+                    <div class="animal-card" onclick="showDetails('Tortuga de Orejas Rojas')">
+                        <div class="animal-card-img">
+                            <img src="img/trachemys_scripta_elegans.jpg" alt="Tortuga de Orejas Rojas">
+                        </div>
+                        <div class="animal-card-body">
+                            <h3>Tortuga de Orejas Rojas (Trachemys scripta elegans)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" onclick="moveRight('tortugas')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+
 </section>
