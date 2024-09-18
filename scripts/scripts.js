@@ -165,10 +165,19 @@ function loadContent(file) {
 }
 
 // Cargar archivos HTML de forma dinámica
-loadContent('pages/mamiferos.html');
+
 loadContent('pages/anfibios.html');
+
 loadContent('pages/reptiles.html');
+
 loadContent('pages/peces.html');
-loadContent('pages/artropodos.html');
+
 loadContent('pages/aves.html');
+
+loadContent('pages/artropodos.html');
+
+loadContent('pages/mamiferos.html');
+
+
+
 
