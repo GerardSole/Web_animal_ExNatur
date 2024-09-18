@@ -164,6 +164,105 @@ function loadContent(file) {
         .catch(error => console.log('Error al cargar el archivo: ', error));
 }
 
+function filterAnimals() {
+    // Obtener el valor de búsqueda del input
+    const searchValue = document.getElementById('animal-search').value.toLowerCase();
+
+    // Obtener todas las secciones de animales (grupo-animal)
+    const groups = document.querySelectorAll('.grupo-animal');
+
+    // Recorrer cada grupo (Reptiles, Peces, etc.)
+    groups.forEach(group => {
+        let groupMatch = false;
+
+        // Obtener el título del grupo (h2) y verificar si coincide con el valor de búsqueda
+        const h2 = group.querySelector('h2').innerText.toLowerCase();
+
+        // Si el término de búsqueda coincide con el nombre del grupo (h2), mostramos todas las subcategorías y animales dentro de ese grupo
+        if (h2.includes(searchValue)) {
+            groupMatch = true;  // Coincide con el título de grupo
+            group.style.display = 'block';  // Mostrar el grupo completo
+
+            // Mostrar todas las subcategorías y sus animales
+            const subgroups = group.querySelectorAll('.subgrupo-animal');
+            subgroups.forEach(subgroup => {
+                subgroup.style.display = 'block';
+                const animalCards = subgroup.querySelectorAll('.animal-card');
+                animalCards.forEach(card => {
+                    card.style.display = 'block';
+                });
+
+                // Reiniciar la posición del carrusel
+                resetCarousel(subgroup);
+            });
+            return;  // No es necesario seguir buscando en este grupo
+        }
+
+        // Obtener los subgrupos de cada grupo (Lagartos, Serpientes, etc.)
+        const subgroups = group.querySelectorAll('.subgrupo-animal');
+        let subgroupMatch = false;
+
+        subgroups.forEach(subgroup => {
+            let hasAnimalMatch = false;
+
+            // Obtener el título del subgrupo (h3) y verificar si coincide con el valor de búsqueda
+            const h3 = subgroup.querySelector('h3').innerText.toLowerCase();
+            if (h3.includes(searchValue)) {
+                subgroupMatch = true;  // Coincide con el título de subgrupo
+                subgroup.style.display = 'block';  // Mostrar el subgrupo completo (con todas sus tarjetas)
+
+                // Mostrar todas las tarjetas dentro del subgrupo
+                const animalCards = subgroup.querySelectorAll('.animal-card');
+                animalCards.forEach(card => {
+                    card.style.display = 'block';
+                });
+
+                // Reiniciar la posición del carrusel
+                resetCarousel(subgroup);
+            } else {
+                // Si no coincide el nombre del subgrupo, buscar por animales
+                const animalCards = subgroup.querySelectorAll('.animal-card');
+                animalCards.forEach(card => {
+                    const animalName = card.querySelector('h3').innerText.toLowerCase();
+                    if (animalName.includes(searchValue)) {
+                        card.style.display = 'block';  // Mostrar la tarjeta si coincide
+                        hasAnimalMatch = true;  // Coincidencia en el nombre del animal
+                    } else {
+                        card.style.display = 'none';  // Ocultar la tarjeta si no coincide
+                    }
+                });
+
+                // Mostrar el subgrupo si tiene al menos una tarjeta que coincida
+                if (hasAnimalMatch) {
+                    subgroup.style.display = 'block';
+                    subgroupMatch = true;  // Marcar como coincidencia en el subgrupo
+
+                    // Reiniciar la posición del carrusel
+                    resetCarousel(subgroup);
+                } else {
+                    subgroup.style.display = 'none';  // Ocultar el subgrupo si no hay coincidencias
+                }
+            }
+        });
+
+        // Mostrar el grupo si tiene alguna coincidencia en sus subgrupos o animales
+        if (subgroupMatch) {
+            group.style.display = 'block';
+            groupMatch = true;  // Marcar como coincidencia en el grupo
+        } else {
+            group.style.display = 'none';  // Ocultar el grupo si no hay coincidencias
+        }
+    });
+}
+
+// Función para reiniciar la posición del carrusel
+function resetCarousel(subgroup) {
+    const carouselWrapper = subgroup.querySelector('.animal-grid-wrapper');
+    if (carouselWrapper) {
+        carouselWrapper.scrollLeft = 0;  // Volver al principio del carrusel
+    }
+}
+
 // Cargar archivos HTML de forma dinámica
 
 loadContent('pages/anfibios.html');
