@@ -20,7 +20,9 @@ const animales = {
     },
     'axolote': {
         name: 'Axolote (Ambystoma mexicanum)',
-        img: '../../img/ambystoma_mexicanum.jpg',
+        img: [
+            '../../img/ambystoma_mexicanum.jpg',
+        ],
         details: [
             'Familia: Ambystomatidae',
             'Distribución: Lagos de Xochimilco y Chalco, México.',
