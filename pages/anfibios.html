@@ -1,0 +1,103 @@
+<section class="grupo-animal anfibios">
+    <a href="tipos_anfibio.html" class="titulo-enlace anfibios">
+        <h2>Anfibios</h2>
+    </a>
+
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveLeft('anfibios')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <!-- Grilla de animales -->
+        <div id="anfibios" class="animal-grid-wrapper">
+            <div class="animal-grid">
+                <div class="animal-card" onclick="showDetails('Rana Pacman')">
+                    <div class="animal-card-img">
+                        <img src="img/ceratophrys_ornata.jpeg" alt="RanaPacman">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Rana Pacman (Ceratophrys ornata)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('SalamandraTigre')">
+                    <div class="animal-card-img">
+                        <img src="img/ambystoma_tigrinum.jpg" alt="Salamandra Tigre">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Salamandra Tigre (Ambystoma tigrinum)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('RanaDeOjosRojos')">
+                    <div class="animal-card-img">
+                        <img src="img/agalychnis_callidryas.jpeg" alt="Rana de Ojos Rojos">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Rana de Ojos Rojos (Agalychnis callidryas)</h3>
+                    </div>
+                </div>
+                <div class="animal-card"
+                    onclick="window.location.href='pages/details/ficha_animal.html?animal=axolote'">
+                    <div class="animal-card-img">
+                        <img src="img/ambystoma_mexicanum.jpg" alt="Axolote">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Axolote (Ambystoma mexicanum)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('RanaDardo')">
+                    <div class="animal-card-img">
+                        <img src="img/litoria_caerulea.png" alt="Rana Arborícola Blanca">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Rana Arborícola Blanca (Litoria caerulea)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('RanaDardo')">
+                    <div class="animal-card-img">
+                        <img src="img/salamandra_salamandra.jpg" alt="Salamandra de Fuego">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Salamandra de Fuego (Salamandra salamandra)</h3>
+                    </div>
+                </div>
+
+                <div class="animal-card" onclick="showDetails('RanaDardo')">
+                    <div class="animal-card-img">
+                        <img src="img/dyscophus_guineti.jpg" alt="Rana Tomate">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Rana Tomate (Dyscophus guineti)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('RanaDardo')">
+                    <div class="animal-card-img">
+                        <img src="img/pyxicephalus_adspersus.jpg" alt="Rana Toro Africana">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Rana Toro Africana (Pyxicephalus adspersus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('RanaDardo')">
+                    <div class="animal-card-img">
+                        <img src="img/cynops_orientalis.jpeg" alt="Tritón Vientre de Fuego">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Tritón Vientre de Fuego (Cynops orientalis)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <button class="carousel-btn right-btn" onclick="moveRight('anfibios')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>

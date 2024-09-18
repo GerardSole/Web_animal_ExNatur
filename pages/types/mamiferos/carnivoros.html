@@ -1,0 +1,31 @@
+<section class="grupo-animal carnivoros">
+    <a class="titulo-enlace carnivoros">
+        <h2>Carnívoros</h2>
+    </a>
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveLeft('carnivoros')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div id="carnivoros" class="animal-grid-wrapper">
+            <div class="animal-grid">
+                <div class="animal-card" onclick="showDetails('Hurón')">
+                    <div class="animal-card-img">
+                        <img src="../../img/mustela_putorius_furo.jpg" alt="Hurón">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Hurón (Mustela putorius furo)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn right-btn" onclick="moveRight('carnivoros')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>

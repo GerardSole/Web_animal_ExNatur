@@ -1,0 +1,63 @@
+<section class="grupo-animal roedores">
+    <a class="titulo-enlace roedores">
+        <h2>Roedores</h2>
+    </a>
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveLeft('roedores')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div id="roedores" class="animal-grid-wrapper">
+            <div class="animal-grid">
+                <div class="animal-card" onclick="window.location.href='ficha_animal.html?animal=jerbo'">
+                    <div class="animal-card-img">
+                        <img src="../../img/meriones_unguiculatus.jpg" alt="Jerbo">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Jerbo (Meriones unguiculatus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Ratón')">
+                    <div class="animal-card-img">
+                        <img src="../../img/acomys_cahirinus.jpg" alt="Ratón">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Ratón espinoso egipcio (Acomys cahirinus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Chinchilla')">
+                    <div class="animal-card-img">
+                        <img src="../../img/chinchilla_lanigera.jpg" alt="Chinchilla">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Chinchilla (Chinchilla lanigera)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Degú')">
+                    <div class="animal-card-img">
+                        <img src="../../img/octon_degus.jpg" alt="Degú">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Degú (Octodon degus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('RataArena')">
+                    <div class="animal-card-img">
+                        <img src="../../img/psammomys_obesus.jpg" alt="Rata de la arena">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Rata de la arena (Psammomys obesus)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn right-btn" onclick="moveRight('roedores')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>

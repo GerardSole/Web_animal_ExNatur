@@ -1,0 +1,39 @@
+<section class="grupo-animal insectivoros">
+    <a class="titulo-enlace insectivoros">
+        <h2>Insectívoros</h2>
+    </a>
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveLeft('insectivoros')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div id="insectivoros" class="animal-grid-wrapper">
+            <div class="animal-grid">
+                <div class="animal-card" onclick="showDetails('Erizo')">
+                    <div class="animal-card-img">
+                        <img src="../../img/atelerix_albiventris.jpg" alt="Erizo">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Erizo enano africano (Atelerix albiventris)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Musaraña')">
+                    <div class="animal-card-img">
+                        <img src="../../img/macroscelididae.jpg" alt="Musaraña">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Musaraña elefante (Macroscelididae)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn right-btn" onclick="moveRight('insectivoros')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>

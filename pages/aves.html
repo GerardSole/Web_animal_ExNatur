@@ -1,0 +1,67 @@
+<section class="grupo-animal aves">
+    <a href="tipos_aves.html" class="titulo-enlace aves">
+        <h2>Aves</h2>
+    </a>
+
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveLeft('aves')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <!-- Grilla de animales -->
+        <div id="aves" class="animal-grid-wrapper">
+            <div class="animal-grid">
+                <div class="animal-card" onclick="showDetails('Loro')">
+                    <div class="animal-card-img aves">
+                        <img src="img/amazona_autumnalis.jpg" alt="Loro Frente Roja">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Loro Frente Roja (Amazona autumnalis)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Canario')">
+                    <div class="animal-card-img aves">
+                        <img src="img/serinus_canaria.jpg" alt="Canario">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Canario (Serinus canaria)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Guacamayo')">
+                    <div class="animal-card-img aves">
+                        <img src="img/ara_macao.jpg" alt="Guacamayo Escarlata">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Guacamayo Escarlata (Ara macao)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Tucan')">
+                    <div class="animal-card-img aves">
+                        <img src="img/ramphastos_sulfuratus.jpg" alt="Tucán Pico Iris">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Tucán Pico Iris (Ramphastos sulfuratus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Periquito')">
+                    <div class="animal-card-img aves">
+                        <img src="img/melopsittacus_undulatus.jpeg" alt="Periquito">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Periquito (Melopsittacus undulatus)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-btn right-btn" onclick="moveRight('aves')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>

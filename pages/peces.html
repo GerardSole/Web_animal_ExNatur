@@ -1,0 +1,162 @@
+<section class="grupo-animal peces">
+    <a href="tipos_peces.html" class="titulo-enlace peces">
+        <h2>Peces</h2>
+    </a>
+
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveLeft('peces')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <!-- Grilla de animales -->
+        <div id="peces" class="animal-grid-wrapper">
+            <div class="animal-grid">
+                <div class="animal-card" onclick="showDetails('PezBetta')">
+                    <div class="animal-card-img">
+                        <img src="img/betta_splendens.webp" alt="Pez Betta">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Pez Betta (Betta splendens)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('PezPayaso')">
+                    <div class="animal-card-img">
+                        <img src="img/amphiprion_ocellaris.jpg" alt="Pez Payaso">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Pez Payaso (Amphiprion ocellaris)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('CarpaKoi')">
+                    <div class="animal-card-img">
+                        <img src="img/cyprinus_carpio.jpg" alt="Carpa Koi">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Carpa Koi (Cyprinus carpio)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('PezAngel')">
+                    <div class="animal-card-img">
+                        <img src="img/pterophyllum_scalare.jpg" alt="Pez Ángel">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Pez Ángel (Pterophyllum scalare)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Guppy')">
+                    <div class="animal-card-img">
+                        <img src="img/poecilia_reticulata.jpg" alt="Guppy">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Guppy (Poecilia reticulata)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('TetraNeon')">
+                    <div class="animal-card-img peces">
+                        <img src="img/paracheirodon_innesi.jpeg" alt="Tetra Neón">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Tetra Neón (Paracheirodon innesi)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('CorydoraPanda')">
+                    <div class="animal-card-img peces">
+                        <img src="img/corydoras_panda.jpeg" alt="Corydora Panda">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Corydora Panda (Corydoras panda)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Molly')">
+                    <div class="animal-card-img peces">
+                        <img src="img/poecilia_sphenops.webp" alt="Molly">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Molly (Poecilia sphenops)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Disco')">
+                    <div class="animal-card-img peces">
+                        <img src="img/symphysodon.jpg" alt="Pez Disco">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Pez Disco (Symphysodon)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('CíclidoEnanoRamirezi')">
+                    <div class="animal-card-img peces">
+                        <img src="img/mikrogeophagus_ramirezi.jpg" alt="Cíclido Enano Ramirezi">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Cíclido Enano Ramirezi (Mikrogeophagus ramirezi)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('GuramiPerla')">
+                    <div class="animal-card-img peces">
+                        <img src="img/trichopodus_leeri.jpg" alt="Gurami Perla">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Gurami Perla (Trichopodus leerii)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Otocinclus')">
+                    <div class="animal-card-img peces">
+                        <img src="img/otocinclus.jpg" alt="Otocinclus">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Otocinclus (Otocinclus sp.)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('Platy')">
+                    <div class="animal-card-img peces">
+                        <img src="img/xiphophorus_maculatus.jpg" alt="Platy">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Platy (Xiphophorus maculatus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('BarboCereza')">
+                    <div class="animal-card-img peces">
+                        <img src="img/puntius_titteya.jpeg" alt="Barbo Cereza">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Barbo Cereza (Puntius titteya)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('CorydoraBronce')">
+                    <div class="animal-card-img peces">
+                        <img src="img/corydoras_aeneus.jpg" alt="Corydora Bronce">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Corydora Bronce (Corydoras aeneus)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('TetraCardenal')">
+                    <div class="animal-card-img peces">
+                        <img src="img/paracheirodon_axelrodi.jpg" alt="Tetra Cardenal">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Tetra Cardenal (Paracheirodon axelrodi)</h3>
+                    </div>
+                </div>
+                <div class="animal-card" onclick="showDetails('PezCebra')">
+                    <div class="animal-card-img peces">
+                        <img src="img/danio_rerio.webp" alt="Pez Cebra">
+                    </div>
+                    <div class="animal-card-body">
+                        <h3>Pez Cebra (Danio rerio)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn right-btn" onclick="moveRight('peces')">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>

@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilos de la ficha técnica */
+.ficha-tecnica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.animal-grid {
+    display: flex;
+    gap: 20px;
+    transition: transform 1s ease;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.animal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.animal-card-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+/* Detalles del animal */
+.animal-ficha-body {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.animal-ficha-body h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.animal-ficha-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.animal-ficha-body ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
