@@ -33,7 +33,142 @@ const animales = {
             'Comportamiento: Puede regenerar partes del cuerpo, es acuático.'
         ]
     },
-    // Puedes agregar más animales aquí
+    'gecko_leopardo': {
+        name: 'Gecko Leopardo (Eublepharis macularius)',
+        img: [
+            '../../img/eublepharis-macularius.webp',
+        ],
+        details: [
+            'Familia: Eublepharidae',
+            'Distribución: Asia central (Afganistán, Pakistán, India e Irán).',
+            'Hábitat: Zonas áridas, desérticas y rocosas.',
+            'Dieta: Insectívoro (grillos, gusanos de la harina, cucarachas).',
+            'Esperanza de vida: 10-20 años en cautiverio.',
+            'Tamaño: 18-28 cm de largo.',
+            'Comportamiento: Nocturno, de hábitos terrestres, fácil de cuidar en cautiverio.'
+        ]
+    },
+    'pogona_vitticeps': {
+        name: 'Dragón Barbudo (Pogona vitticeps)',
+        img: [
+            '../../img/pogona_vitticeps.jpg',
+        ],
+        details: [
+            'Familia: Agamidae',
+            'Distribución: Australia Central.',
+            'Hábitat: Zonas áridas, desiertos, y áreas rocosas.',
+            'Dieta: Omnívoro (insectos, vegetales, frutas).',
+            'Esperanza de vida: 10-15 años en cautiverio.',
+            'Tamaño: 40-60 cm de largo, incluyendo la cola.',
+            'Comportamiento: Diurno, dócil, y fácil de manipular en cautiverio.'
+        ]
+    },
+    'iguana_iguana': {
+        name: 'Iguana Verde (Iguana iguana)',
+        img: [
+            '../../img/iguana_iguana.jpg',
+        ],
+        details: [
+            'Familia: Iguanidae',
+            'Distribución: América Central y Sudamérica.',
+            'Hábitat: Bosques tropicales y subtropicales, cerca de fuentes de agua.',
+            'Dieta: Herbívoro (hojas, frutas, flores).',
+            'Esperanza de vida: 15-20 años en cautiverio.',
+            'Tamaño: 1.5-2 metros de largo, incluyendo la cola.',
+            'Comportamiento: Arborícola y diurno, puede ser territorial.'
+        ]
+    },
+    'chamaeleo_calyptratus': {
+        name: 'Camaleón Velado (Chamaeleo calyptratus)',
+        img: [
+            '../../img/chamaeleo_calyptratus.jpg',
+        ],
+        details: [
+            'Familia: Chamaeleonidae',
+            'Distribución: Yemen y Arabia Saudita.',
+            'Hábitat: Zonas montañosas y bosques secos.',
+            'Dieta: Insectívoro (grillos, saltamontes, cucarachas).',
+            'Esperanza de vida: 5-7 años en cautiverio.',
+            'Tamaño: 35-60 cm de largo.',
+            'Comportamiento: Arborícola y solitario, cambia de color dependiendo de su estado emocional.'
+        ]
+    },
+    'boa_constrictor': {
+        name: 'Boa Constrictor (Boa constrictor)',
+        img: [
+            '../../img/boa_constrictor.jpg',
+        ],
+        details: [
+            'Familia: Boidae',
+            'Distribución: América Central y Sudamérica.',
+            'Hábitat: Bosques tropicales, sabanas, áreas cercanas a cuerpos de agua.',
+            'Dieta: Carnívoro (roedores, aves, pequeños mamíferos).',
+            'Esperanza de vida: 20-30 años en cautiverio.',
+            'Tamaño: 2-4 metros de largo, dependiendo de la subespecie.',
+            'Comportamiento: Principalmente nocturno, tranquilo, y buen candidato para cautiverio.'
+        ]
+    },
+    'pantherophis_guttatus': {
+        name: 'Serpiente del Maizal (Pantherophis guttatus)',
+        img: [
+            '../../img/pantherophis_guttatus.jpg',
+        ],
+        details: [
+            'Familia: Colubridae',
+            'Distribución: Sureste de los Estados Unidos.',
+            'Hábitat: Bosques, campos abiertos, y áreas agrícolas.',
+            'Dieta: Carnívoro (pequeños roedores, aves, lagartijas).',
+            'Esperanza de vida: 15-20 años en cautiverio.',
+            'Tamaño: 1.2-1.8 metros de largo.',
+            'Comportamiento: Diurna, tranquila, y fácil de manejar en cautiverio.'
+        ]
+    },
+    'lampropeltis_getula': {
+        name: 'Serpiente Rey (Lampropeltis getula)',
+        img: [
+            '../../img/lampropeltis_getula.jpg',
+        ],
+        details: [
+            'Familia: Colubridae',
+            'Distribución: Estados Unidos, México y América Central.',
+            'Hábitat: Bosques, campos abiertos, y áreas semiáridas.',
+            'Dieta: Carnívoro (roedores, otras serpientes, lagartijas).',
+            'Esperanza de vida: 15-20 años en cautiverio.',
+            'Tamaño: 1.2-1.8 metros de largo.',
+            'Comportamiento: Diurna y activa, conocida por su habilidad para alimentarse de otras serpientes.'
+        ]
+    },
+    'testudo_horsfieldii': {
+        name: 'Tortuga Rusa (Testudo horsfieldii)',
+        img: [
+            '../../img/testudo_horsfieldii.jpeg',
+        ],
+        details: [
+            'Familia: Testudinidae',
+            'Distribución: Asia Central (Irán, Pakistán, Afganistán, Kazajistán).',
+            'Hábitat: Zonas áridas y semiáridas, estepas y áreas desérticas.',
+            'Dieta: Herbívora (hierbas, plantas, flores).',
+            'Esperanza de vida: 40-50 años en cautiverio.',
+            'Tamaño: 15-25 cm de largo.',
+            'Comportamiento: Diurna, activa en primavera y verano, hiberna durante el invierno.'
+        ]
+    },
+    'trachemys_scripta_elegans': {
+        name: 'Tortuga de Orejas Rojas (Trachemys scripta elegans)',
+        img: [
+            '../../img/trachemys_scripta_elegans.jpg',
+        ],
+        details: [
+            'Familia: Emydidae',
+            'Distribución: Estados Unidos, principalmente en el Valle del Misisipi.',
+            'Hábitat: Lagos, estanques, ríos lentos y áreas con agua dulce.',
+            'Dieta: Omnívora (plantas acuáticas, peces pequeños, insectos).',
+            'Esperanza de vida: 20-30 años en cautiverio.',
+            'Tamaño: 20-30 cm de largo.',
+            'Comportamiento: Diurna, excelente nadadora, se calienta al sol en troncos o rocas fuera del agua.'
+        ]
+    },
+
 };
 
 let currentSlide = 0; // Variable para rastrear la imagen actual
