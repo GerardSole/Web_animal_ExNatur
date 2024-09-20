@@ -168,6 +168,82 @@ const animales = {
             'Comportamiento: Diurna, excelente nadadora, se calienta al sol en troncos o rocas fuera del agua.'
         ]
     },
+    //AVES
+    'amazona_autumnalis': {
+        name: 'Loro Corona Roja (Amazona autumnalis)',
+        img: [
+            '../../img/amazona_autumnalis.jpg',
+        ],
+        details: [
+            'Familia: Psittacidae',
+            'Distribución: América Central y Sudamérica.',
+            'Hábitat: Bosques tropicales y subtropicales.',
+            'Dieta: Frugívoro (frutas, semillas, nueces, flores).',
+            'Esperanza de vida: 40-60 años en cautiverio.',
+            'Tamaño: 33-35 cm de largo.',
+            'Comportamiento: Social, puede imitar sonidos humanos, forma parejas de por vida.'
+        ]
+    },
+    'ara_macao': {
+        name: 'Guacamayo Rojo (Ara macao)',
+        img: [
+            '../../img/ara_macao.jpg',
+        ],
+        details: [
+            'Familia: Psittacidae',
+            'Distribución: América Central y Sudamérica.',
+            'Hábitat: Bosques tropicales y subtropicales, especialmente cerca de ríos.',
+            'Dieta: Frugívoro (frutas, nueces, semillas, flores).',
+            'Esperanza de vida: 50-60 años en cautiverio.',
+            'Tamaño: 81-96 cm de largo, incluyendo la cola.',
+            'Comportamiento: Muy social e inteligente, forma lazos fuertes con sus compañeros.'
+        ]
+    },
+    'serinus_canaria': {
+        name: 'Canario (Serinus canaria)',
+        img: [
+            '../../img/serinus_canaria.jpg',
+        ],
+        details: [
+            'Familia: Fringillidae',
+            'Distribución: Islas Canarias, Madeira y Azores.',
+            'Hábitat: Áreas boscosas y matorrales en altitudes bajas.',
+            'Dieta: Granívoro (semillas, pequeños insectos).',
+            'Esperanza de vida: 10-15 años en cautiverio.',
+            'Tamaño: 12-13 cm de largo.',
+            'Comportamiento: Conocido por su canto melódico, especialmente los machos, sociable pero territorial con otros machos.'
+        ]
+    },
+    'melopsittacus_undulatus': {
+        name: 'Periquito Australiano (Melopsittacus undulatus)',
+        img: [
+            '../../img/melopsittacus_undulatus.jpeg',
+        ],
+        details: [
+            'Familia: Psittacidae',
+            'Distribución: Australia.',
+            'Hábitat: Zonas áridas, sabanas, áreas de matorrales.',
+            'Dieta: Granívoro (semillas, frutas, vegetales).',
+            'Esperanza de vida: 5-10 años en cautiverio.',
+            'Tamaño: 18 cm de largo.',
+            'Comportamiento: Social, juguetón, y puede aprender a imitar sonidos humanos.'
+        ]
+    },
+    'ramphastos_sulfuratus': {
+        name: 'Tucán Pico Iris (Ramphastos sulfuratus)',
+        img: [
+            '../../img/ramphastos_sulfuratus.jpg',
+        ],
+        details: [
+            'Familia: Ramphastidae',
+            'Distribución: América Central y norte de Sudamérica.',
+            'Hábitat: Bosques tropicales y subtropicales.',
+            'Dieta: Frugívoro (frutas, insectos, pequeños reptiles).',
+            'Esperanza de vida: 15-20 años en cautiverio.',
+            'Tamaño: 42-55 cm de largo.',
+            'Comportamiento: Social, se mueve en grupos pequeños, característico por su gran pico colorido.'
+        ]
+    },
 
 };
 
