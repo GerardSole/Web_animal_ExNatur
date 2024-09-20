@@ -245,6 +245,249 @@ const animales = {
         ]
     },
 
+    //PECES
+
+    'betta_splendens': {
+        name: 'Pez Betta (Betta splendens)',
+        img: [
+            '../../img/betta_splendens.webp',
+        ],
+        details: [
+            'Familia: Osphronemidae',
+            'Distribución: Sudeste Asiático (Tailandia, Camboya, Vietnam).',
+            'Hábitat: Arroyos lentos, estanques y campos de arroz.',
+            'Dieta: Carnívoro (larvas de insectos, pequeños crustáceos).',
+            'Esperanza de vida: 3-5 años en cautiverio.',
+            'Tamaño: 6-8 cm de largo.',
+            'Comportamiento: Territorial y agresivo con otros machos, mejor mantenerlo solo o con peces compatibles.'
+        ]
+    },
+    'paracheirodon_innesi': {
+        name: 'Tetra Neón (Paracheirodon innesi)',
+        img: [
+            '../../img/paracheirodon_innesi.jpeg',
+        ],
+        details: [
+            'Familia: Characidae',
+            'Distribución: Cuenca del Amazonas (Brasil, Perú, Colombia).',
+            'Hábitat: Aguas dulces lentas y poco profundas.',
+            'Dieta: Omnívoro (alimentos pequeños, como insectos y plantas).',
+            'Esperanza de vida: 5 años en cautiverio.',
+            'Tamaño: 3-4 cm de largo.',
+            'Comportamiento: Pacífico y social, debe mantenerse en grupos.'
+        ]
+    },
+    'pterophyllum_scalare': {
+        name: 'Pez Ángel (Pterophyllum scalare)',
+        img: [
+            '../../img/pterophyllum_scalare.jpg',
+        ],
+        details: [
+            'Familia: Cichlidae',
+            'Distribución: Cuenca del Amazonas y ríos en América del Sur.',
+            'Hábitat: Aguas lentas de ríos y lagos.',
+            'Dieta: Omnívoro (insectos, crustáceos, algas).',
+            'Esperanza de vida: 10-15 años en cautiverio.',
+            'Tamaño: 15 cm de largo.',
+            'Comportamiento: Territorial, pero generalmente pacífico en acuarios comunitarios grandes.'
+        ]
+    },
+    'poecilia_reticulata': {
+        name: 'Guppy (Poecilia reticulata)',
+        img: [
+            '../../img/poecilia_reticulata.jpg',
+        ],
+        details: [
+            'Familia: Poeciliidae',
+            'Distribución: América del Sur.',
+            'Hábitat: Aguas dulces y salobres de ríos y lagunas.',
+            'Dieta: Omnívoro (algas, pequeños insectos, crustáceos).',
+            'Esperanza de vida: 2-3 años en cautiverio.',
+            'Tamaño: 3-6 cm de largo.',
+            'Comportamiento: Pacífico y activo, ideal para acuarios comunitarios.'
+        ]
+    },
+    'poecilia_sphenops': {
+        name: 'Molly (Poecilia sphenops)',
+        img: [
+            '../../img/poecilia_sphenops.webp',
+        ],
+        details: [
+            'Familia: Poeciliidae',
+            'Distribución: América Central y del Norte.',
+            'Hábitat: Aguas dulces y salobres.',
+            'Dieta: Omnívoro (algas, plantas, pequeños invertebrados).',
+            'Esperanza de vida: 3-5 años en cautiverio.',
+            'Tamaño: 4-10 cm de largo.',
+            'Comportamiento: Pacífico, ideal para acuarios comunitarios.'
+        ]
+    },
+    'xiphophorus_maculatus': {
+        name: 'Pez Platy (Xiphophorus maculatus)',
+        img: [
+            '../../img/xiphophorus_maculatus.jpg',
+        ],
+        details: [
+            'Familia: Poeciliidae',
+            'Distribución: América Central.',
+            'Hábitat: Aguas dulces de ríos y lagunas.',
+            'Dieta: Omnívoro (algas, pequeños invertebrados).',
+            'Esperanza de vida: 3-5 años en cautiverio.',
+            'Tamaño: 4-6 cm de largo.',
+            'Comportamiento: Pacífico y sociable, ideal para acuarios comunitarios.'
+        ]
+    },
+    'puntius_titteya': {
+        name: 'Barbo Cereza (Puntius titteya)',
+        img: [
+            '../../img/puntius_titteya.jpeg',
+        ],
+        details: [
+            'Familia: Cyprinidae',
+            'Distribución: Sri Lanka.',
+            'Hábitat: Arroyos y ríos lentos.',
+            'Dieta: Omnívoro (algas, pequeños invertebrados).',
+            'Esperanza de vida: 4-5 años en cautiverio.',
+            'Tamaño: 4-5 cm de largo.',
+            'Comportamiento: Pacífico, pero puede ser territorial durante la reproducción.'
+        ]
+    },
+    'corydoras_panda': {
+        name: 'Corydora Panda (Corydoras panda)',
+        img: [
+            '../../img/corydoras_panda.jpeg',
+        ],
+        details: [
+            'Familia: Callichthyidae',
+            'Distribución: Cuenca del Amazonas (Perú).',
+            'Hábitat: Aguas dulces claras y oxigenadas.',
+            'Dieta: Omnívoro (larvas de insectos, algas).',
+            'Esperanza de vida: 5-10 años en cautiverio.',
+            'Tamaño: 5-6 cm de largo.',
+            'Comportamiento: Pacífico y social, debe mantenerse en grupos.'
+        ]
+    },
+    'corydoras_aeneus': {
+        name: 'Corydora Bronceada (Corydoras aeneus)',
+        img: [
+            '../../img/corydoras_aeneus.jpg',
+        ],
+        details: [
+            'Familia: Callichthyidae',
+            'Distribución: América del Sur (Venezuela, Argentina).',
+            'Hábitat: Aguas dulces, ríos y lagunas.',
+            'Dieta: Omnívoro (larvas de insectos, algas).',
+            'Esperanza de vida: 5-10 años en cautiverio.',
+            'Tamaño: 6-7 cm de largo.',
+            'Comportamiento: Pacífico y social, debe mantenerse en grupos.'
+        ]
+    },
+    'paracheirodon_axelrodi': {
+        name: 'Tetra Cardenal (Paracheirodon axelrodi)',
+        img: [
+            '../../img/paracheirodon_axelrodi.jpg',
+        ],
+        details: [
+            'Familia: Characidae',
+            'Distribución: Cuenca del Orinoco y Río Negro (Sudamérica).',
+            'Hábitat: Aguas lentas de ríos y lagos.',
+            'Dieta: Omnívoro (pequeños insectos y algas).',
+            'Esperanza de vida: 4-5 años en cautiverio.',
+            'Tamaño: 3-5 cm de largo.',
+            'Comportamiento: Pacífico y social, mejor mantenerlo en grupos.'
+        ]
+    },
+    'danio_rerio': {
+        name: 'Pez Cebra (Danio rerio)',
+        img: [
+            '../../img/danio_rerio.webp',
+        ],
+        details: [
+            'Familia: Cyprinidae',
+            'Distribución: Asia (India, Pakistán, Bangladesh).',
+            'Hábitat: Aguas dulces de ríos y arroyos.',
+            'Dieta: Omnívoro (algas, pequeños invertebrados).',
+            'Esperanza de vida: 2-3 años en cautiverio.',
+            'Tamaño: 4-5 cm de largo.',
+            'Comportamiento: Activo y social, ideal para acuarios comunitarios.'
+        ]
+    },
+    'trichopodus_leeri': {
+        name: 'Gurami Perla (Trichopodus leeri)',
+        img: [
+            '../../img/trichopodus_leeri.jpg',
+        ],
+        details: [
+            'Familia: Osphronemidae',
+            'Distribución: Sudeste Asiático.',
+            'Hábitat: Aguas dulces lentas y estancadas.',
+            'Dieta: Omnívoro (algas, insectos pequeños).',
+            'Esperanza de vida: 5-7 años en cautiverio.',
+            'Tamaño: 12 cm de largo.',
+            'Comportamiento: Pacífico, aunque los machos pueden ser territoriales.'
+        ]
+    },
+    'otocinclus': {
+        name: 'Otocinclo (Otocinclus)',
+        img: [
+            '../../img/otocinclus.jpg',
+        ],
+        details: [
+            'Familia: Loricariidae',
+            'Distribución: América del Sur.',
+            'Hábitat: Aguas dulces de ríos y arroyos.',
+            'Dieta: Herbívoro (algas).',
+            'Esperanza de vida: 3-5 años en cautiverio.',
+            'Tamaño: 4-5 cm de largo.',
+            'Comportamiento: Pacífico, ideal para acuarios comunitarios, ayuda a controlar las algas.'
+        ]
+    },
+    'symphysodon': {
+        name: 'Pez Disco (Symphysodon)',
+        img: [
+            '../../img/symphysodon.jpg',
+        ],
+        details: [
+            'Familia: Cichlidae',
+            'Distribución: Cuenca del Amazonas.',
+            'Hábitat: Aguas lentas y profundas de ríos.',
+            'Dieta: Omnívoro (pequeños insectos, crustáceos, algas).',
+            'Esperanza de vida: 10-15 años en cautiverio.',
+            'Tamaño: 15-20 cm de largo.',
+            'Comportamiento: Pacífico, pero requiere cuidados específicos.'
+        ]
+    },
+    'cyprinus_carpio': {
+        name: 'Carpa Común (Cyprinus carpio)',
+        img: [
+            '../../img/cyprinus_carpio.jpg',
+        ],
+        details: [
+            'Familia: Cyprinidae',
+            'Distribución: Asia y Europa (introducida en todo el mundo).',
+            'Hábitat: Lagos, estanques y ríos lentos.',
+            'Dieta: Omnívoro (plantas acuáticas, insectos, pequeños invertebrados).',
+            'Esperanza de vida: 20-40 años en cautiverio.',
+            'Tamaño: 40-100 cm de largo, dependiendo de las condiciones.',
+            'Comportamiento: Pacífico, pero requiere grandes cuerpos de agua.'
+        ]
+    },
+    'amphiprion_ocellaris': {
+        name: 'Pez Payaso (Amphiprion ocellaris)',
+        img: [
+            '../../img/amphiprion_ocellaris.jpg',
+        ],
+        details: [
+            'Familia: Pomacentridae',
+            'Distribución: Océano Índico y Pacífico Occidental.',
+            'Hábitat: Arrecifes de coral, especialmente alrededor de anémonas.',
+            'Dieta: Omnívoro (algas, pequeños crustáceos, zooplancton).',
+            'Esperanza de vida: 6-10 años en cautiverio.',
+            'Tamaño: 8-12 cm de largo.',
+            'Comportamiento: Pacífico, pero puede volverse territorial cerca de anémonas.'
+        ]
+    },
+
 };
 
 let currentSlide = 0; // Variable para rastrear la imagen actual
