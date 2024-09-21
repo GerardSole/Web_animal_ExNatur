@@ -585,24 +585,103 @@ function cargarFichaAnimal() {
 // Función para cargar los mensajes del foro
 function cargarMensajes(animal) {
     fetch(`/api/messages/${animal}`)
-        .then(response => response.json())  // Aquí debería recibir una respuesta en JSON
+        .then(response => response.json())
         .then(messages => {
             const discussionComments = document.getElementById('discussion-comments');
             discussionComments.innerHTML = ''; // Limpiar comentarios previos
 
-            // Mostrar los mensajes
-            messages.forEach(message => {
+            // Invertir el array para mostrar los mensajes más recientes primero
+            messages.reverse().forEach(message => {
                 const messageDiv = document.createElement('div');
                 messageDiv.classList.add('comment');
                 messageDiv.innerHTML = `
-                    <strong>${message.username}</strong> (${new Date(message.createdAt).toLocaleString()}):
+                    <div class="comment-header">
+                        <strong>${message.username}</strong> (${new Date(message.createdAt).toLocaleString()}):
+                    </div>
                     <p>${message.message}</p>
+                    <button class="reply-btn" data-message-id="${message._id}">🔄 Responder</button>
+                    <div class="reply-section" id="reply-section-${message._id}" style="display: none;">
+                        <textarea id="reply-input-${message._id}" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+                        <button class="send-reply-btn" onclick="enviarRespuesta('${message._id}', '${animal}')">Enviar Respuesta</button>
+                    </div>
+                    <div class="replies" id="replies-${message._id}">
+                        <!-- Aquí se mostrarán las respuestas -->
+                    </div>
                 `;
-                discussionComments.appendChild(messageDiv);
+                discussionComments.prepend(messageDiv); // Mostrar mensajes más recientes primero
+
+                // Mostrar las respuestas debajo del mensaje si las hay
+                mostrarRespuestas(message.replies, `replies-${message._id}`);
+            });
+
+            // Añadir event listener a cada botón de respuesta en los mensajes principales
+            document.querySelectorAll('.reply-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const messageId = event.target.getAttribute('data-message-id');
+                    const replySection = document.getElementById(`reply-section-${messageId}`);
+                    replySection.style.display = replySection.style.display === 'none' ? 'block' : 'none';
+                });
             });
         })
         .catch(error => console.error('Error al cargar los mensajes:', error));
 }
+
+// Función para mostrar las respuestas, sin opción de responder a ellas
+function mostrarRespuestas(replies, containerId) {
+    const repliesDiv = document.getElementById(containerId);
+
+    replies.reverse().forEach(reply => {
+        const replyDiv = document.createElement('div');
+        replyDiv.classList.add('reply');
+        replyDiv.innerHTML = `
+            <div class="reply-header">
+                <strong>${reply.username}</strong> (${new Date(reply.createdAt).toLocaleString()}):
+            </div>
+            <p>${reply.replyMessage}</p>
+        `;
+        repliesDiv.prepend(replyDiv); // Mostrar respuestas más recientes primero
+    });
+}
+
+
+// Función para enviar una respuesta (a un mensaje o a otra respuesta)
+function enviarRespuesta(messageId, animal) {
+    const replyInput = document.getElementById(`reply-input-${messageId}`);
+    const replyMessage = replyInput.value.trim();
+    const username = localStorage.getItem('username'); // Obtener el nombre del usuario
+
+    if (!replyMessage) {
+        alert('No puedes enviar una respuesta vacía.');
+        return;
+    }
+
+    fetch('/api/messages/reply', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ messageId, animal, username, replyMessage }),
+    })
+        .then(response => response.json())
+        .then(newReply => {
+            const repliesDiv = document.getElementById(`replies-${messageId}`);
+            const replyDiv = document.createElement('div');
+            replyDiv.classList.add('reply');
+            replyDiv.innerHTML = `
+            <div class="reply-header">
+                <strong>${newReply.username}</strong> (${new Date(newReply.createdAt).toLocaleString()}):
+            </div>
+            <p>${newReply.replyMessage}</p>
+        `;
+            repliesDiv.prepend(replyDiv); // Mostrar la respuesta más reciente primero
+
+            replyInput.value = ''; // Limpiar el campo de entrada
+            document.getElementById(`reply-section-${messageId}`).style.display = 'none'; // Ocultar el cuadro de respuesta
+        })
+        .catch(error => console.error('Error al enviar la respuesta:', error));
+}
+
+
 
 
 function enviarMensaje(animal) {
@@ -644,7 +723,6 @@ function enviarMensaje(animal) {
         })
         .catch(error => console.error('Error al enviar el mensaje:', error));
 }
-
 
 
 // Ejecutar la función cuando la página cargue

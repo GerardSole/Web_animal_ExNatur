@@ -1,18 +1,35 @@
 const mongoose = require('mongoose');
 
+const ReplySchema = new mongoose.Schema({
+    username: {
+        type: String,
+        required: true,
+    },
+    replyMessage: {
+        type: String,
+        required: true,
+    },
+    replies: [this],  // Respuestas anidadas
+    createdAt: {
+        type: Date,
+        default: Date.now,
+    },
+});
+
 const MessageSchema = new mongoose.Schema({
     animal: {
-        type: String, // Identificador del animal
+        type: String,
         required: true,
     },
     username: {
-        type: String, // Nombre del usuario que envía el comentario
+        type: String,
         required: true,
     },
     message: {
-        type: String, // Contenido del comentario
+        type: String,
         required: true,
     },
+    replies: [ReplySchema],  // Respuestas al mensaje
     createdAt: {
         type: Date,
         default: Date.now,

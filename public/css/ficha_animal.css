@@ -146,12 +146,91 @@ header h1 {
     margin-top: 20px;
 }
 
+
+
+/* Estilo para los mensajes del foro */
 .comment {
-    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.comment:hover {
+    transform: translateY(-5px);
+}
+
+.comment-header {
+    font-weight: bold;
     margin-bottom: 10px;
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    overflow-wrap: break-word;
-    /* Forzar palabras largas a ajustarse */
+}
+
+/* Respuestas anidadas */
+.replies {
+    margin-left: 20px;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+}
+
+.reply {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reply-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reply-btn {
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reply-btn:hover {
+    background-color: #45a049;
+}
+
+.reply-section {
+    margin-top: 10px;
+}
+
+.send-reply-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.send-reply-btn:hover {
+    background-color: #1E88E5;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
