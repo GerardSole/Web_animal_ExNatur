@@ -12,12 +12,10 @@ const app = express();
 app.use(bodyParser.json());
 
 // Conexión a MongoDB
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('Conectado a MongoDB'))
     .catch(err => console.error('Error al conectar a MongoDB', err));
+
 
 // Rutas de autenticación
 app.use('/api/auth', authRoutes);

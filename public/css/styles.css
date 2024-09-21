@@ -207,13 +207,24 @@ h2 {
     background-color: #770303;
 }
 
-/* Diseño del encabezado */
+/* Estilo del contenedor del header */
 .header {
     background-color: #009614;
-    padding: 0.5rem;
+    padding: 1rem;
+    text-align: center;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
+
+/* Centrar el título */
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 
 /* Contenedor de flechas y carrusel */
 .carousel-container {
@@ -381,6 +392,15 @@ h2 {
     border-radius: 10px;
 }
 
+/* Contenedor para alinear el buscador y el login/registro */
+.search-container,
+.auth-container {
+    display: inline-block;
+    /* Los mostramos en la misma línea */
+    vertical-align: middle;
+    /* Alinear verticalmente */
+}
+
 .search-container {
     display: flex;
     justify-content: center;
@@ -406,4 +426,41 @@ h2 {
 .search-input:focus {
     border-color: #009688;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el contenedor del botón de login y el mensaje */
+.auth-container {
+    display: flex;
+    /* Flexbox para el botón y el mensaje */
+    align-items: center;
+    /* Alinear verticalmente al centro */
+    justify-content: flex-end;
+    margin-left: auto;
+    /* Alinear el login y el mensaje a la derecha */
+    margin-right: 20px;
+    /* Separación a la derecha */
+}
+
+/* Estilo del enlace de Login/Registro */
+.login-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* Separar el botón del mensaje */
+}
+
+.login-link:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del mensaje de bienvenida */
+#welcome-message {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    /* Eliminar margen */
 }

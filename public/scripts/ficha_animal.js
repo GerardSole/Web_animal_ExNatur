@@ -490,6 +490,17 @@ const animales = {
 
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+    const animal = new URLSearchParams(window.location.search).get('animal');
+    cargarFichaAnimal(animal); // Cargar la ficha del animal
+    cargarMensajes(animal); // Cargar los mensajes del foro
+
+    // Agregar evento para enviar el comentario cuando se haga clic en el botón
+    document.getElementById('submit-comment').addEventListener('click', () => {
+        enviarMensaje(animal);
+    });
+});
+
 // Función para cargar los datos del animal
 function cargarFichaAnimal() {
     const params = new URLSearchParams(window.location.search);
@@ -529,39 +540,69 @@ function cargarFichaAnimal() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const commentsContainer = document.getElementById('discussion-comments');
-    const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+// Función para cargar los mensajes del foro
+function cargarMensajes(animal) {
+    fetch(`/api/messages/${animal}`)
+        .then(response => response.json())  // Aquí debería recibir una respuesta en JSON
+        .then(messages => {
+            const discussionComments = document.getElementById('discussion-comments');
+            discussionComments.innerHTML = ''; // Limpiar comentarios previos
 
-    // Cargar comentarios guardados al cargar la página
-    storedComments.forEach(comment => {
-        const newComment = document.createElement('div');
-        newComment.classList.add('comment');
-        newComment.textContent = comment;
-        commentsContainer.appendChild(newComment);
-    });
+            // Mostrar los mensajes
+            messages.forEach(message => {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('comment');
+                messageDiv.innerHTML = `
+                    <strong>${message.username}</strong> (${new Date(message.createdAt).toLocaleString()}):
+                    <p>${message.message}</p>
+                `;
+                discussionComments.appendChild(messageDiv);
+            });
+        })
+        .catch(error => console.error('Error al cargar los mensajes:', error));
+}
 
-    document.getElementById('submit-comment').addEventListener('click', function () {
-        const input = document.getElementById('discussion-input');
 
-        if (input.value.trim() !== '') {
-            // Crear un nuevo comentario
-            const newComment = document.createElement('div');
-            newComment.classList.add('comment');
-            newComment.textContent = input.value;
+function enviarMensaje(animal) {
+    const messageInput = document.getElementById('discussion-input'); // Asegúrate de que este ID es correcto
+    const message = messageInput.value.trim();  // Elimina los espacios en blanco al principio y al final
+    const username = localStorage.getItem('username'); // Obtener el nombre del usuario
 
-            // Añadir el nuevo comentario al contenedor de comentarios
-            commentsContainer.appendChild(newComment);
+    console.log("Mensaje:", message);  // Imprime el mensaje en la consola
+    console.log("Usuario:", username);  // Imprime el nombre de usuario en la consola
 
-            // Guardar el comentario en localStorage
-            storedComments.push(input.value);
-            localStorage.setItem('comments', JSON.stringify(storedComments));
+    if (!message) {
+        alert('No puedes enviar un mensaje vacío.');
+        return;
+    }
 
-            // Limpiar el campo de texto
-            input.value = '';
-        }
-    });
-});
+    if (!username) {
+        alert('No se ha identificado el usuario. Por favor, inicia sesión.');
+        return;
+    }
+
+    fetch('/api/messages', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ animal, username, message }),
+    })
+        .then(response => response.json())
+        .then(newMessage => {
+            const discussionComments = document.getElementById('discussion-comments');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('comment');
+            messageDiv.innerHTML = `
+            <strong>${newMessage.username}</strong> (${new Date(newMessage.createdAt).toLocaleString()}):
+            <p>${newMessage.message}</p>
+        `;
+            discussionComments.prepend(messageDiv);
+            messageInput.value = '';  // Limpiar el campo de entrada
+        })
+        .catch(error => console.error('Error al enviar el mensaje:', error));
+}
+
 
 
 // Ejecutar la función cuando la página cargue

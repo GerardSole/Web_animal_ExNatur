@@ -18,11 +18,40 @@
             <input type="text" id="animal-search" onkeyup="filterAnimals()" placeholder="Buscar animales..."
                 class="search-input">
         </div>
+
+        <!-- Contenedor para el botón de Login/Registro y el mensaje -->
+        <div class="auth-container">
+            <a href="auth.html" id="auth-link" class="login-link">Login / Registro</a>
+            <div id="welcome-container"> <!-- Contenedor para el mensaje de bienvenida -->
+                <p id="welcome-message"></p>
+            </div>
+        </div>
     </header>
 
     <div id="content"></div>
 
     <script src="scripts/scripts.js"></script>
+    <script>
+        // Verificar si hay un usuario autenticado
+        document.addEventListener("DOMContentLoaded", function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                // Si el usuario está autenticado, mostrar el mensaje de bienvenida
+                const welcomeMessage = document.getElementById('welcome-message');
+                welcomeMessage.textContent = `¡Bienvenido, ${username}!`;
+
+                // Cambiar el texto del enlace de Login/Registro a "Cerrar Sesión"
+                const authLink = document.getElementById('auth-link');
+                authLink.textContent = 'Cerrar Sesión';
+                authLink.onclick = () => {
+                    localStorage.removeItem('token');
+                    localStorage.removeItem('username');
+                    window.location.reload();  // Recargar la página para reflejar el cambio
+                };
+            }
+        });
+    </script>
+
 </body>
 
 </html>

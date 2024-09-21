@@ -6,12 +6,13 @@ function register() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Verificar si todos los campos están llenos
+    // Verificar si los campos están llenos
     if (!username || !email || !password) {
-        alert('Todos los campos son obligatorios');
+        alert('Por favor, completa todos los campos.');
         return;
     }
 
+    // Hacer la solicitud POST al backend (Ajusta la ruta según tu backend)
     fetch('/api/auth/register', {
         method: 'POST',
         headers: {
@@ -29,10 +30,12 @@ function register() {
         })
         .then((data) => {
             if (data.token) {
-                alert('Registro exitoso');
-                localStorage.setItem('token', data.token);  // Guardar el token JWT
-                document.getElementById('auth-section').style.display = 'none';
-                document.getElementById('forum-section').style.display = 'block';
+                // Guardar el token y el nombre de usuario en localStorage
+                localStorage.setItem('token', data.token);
+                localStorage.setItem('username', username);  // Guardamos el nombre del usuario
+
+                // Redirigir a la página principal
+                window.location.href = 'index.html';
             }
         })
         .catch((error) => {
@@ -42,30 +45,51 @@ function register() {
 }
 
 
-// Función para iniciar sesión
+
 function login() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
+    if (!email || !password) {
+        alert('Por favor, completa ambos campos.');
+        return;
+    }
+
+    // Verificar que la ruta del fetch sea la correcta
     fetch('/api/auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password }), // Enviamos los datos de login al servidor
     })
-        .then((response) => response.json())
-        .then((data) => {
-            if (data.token) {
-                token = data.token;
-                localStorage.setItem('token', token);
-                document.getElementById('auth-section').style.display = 'none';
-                document.getElementById('forum-section').style.display = 'block';
-            } else {
-                alert('Error al iniciar sesión');
+        .then(response => {
+            // Verificamos si la respuesta es un JSON correcto
+            if (!response.ok) {
+                return response.json().then(error => {
+                    throw new Error(error.message || 'Error en el inicio de sesión');
+                });
             }
+            return response.json();
+        })
+        .then(data => {
+            // Si el login es exitoso, guardamos el token y el username
+            if (data.token) {
+                localStorage.setItem('token', data.token);
+                localStorage.setItem('username', data.username);
+
+                // Redirigir a la página principal
+                window.location.href = 'index.html';
+            }
+        })
+        .catch(error => {
+            console.error('Error en el inicio de sesión:', error.message);
+            alert(`Error al iniciar sesión: ${error.message}`);
         });
 }
+
+
+
 
 // Enviar un comentario al foro
 function sendMessage() {

@@ -1,0 +1,99 @@
+/* Aplicar la tipografía globalmente */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f9ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor del formulario de autenticación */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f9ff;
+}
+
+/* Caja del formulario de autenticación */
+.auth-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título del formulario */
+.auth-box h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #009614;
+}
+
+/* Estilos de los campos de entrada (inputs) */
+.auth-box input {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    /* Color de fondo ligero */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Sombra interior */
+}
+
+/* Efecto cuando el input tiene foco */
+.auth-box input:focus {
+    border-color: #009688;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 150, 136, 0.2);
+    /* Sombra ligera */
+}
+
+/* Estilos del botón de registro/inicio de sesión */
+.auth-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.auth-btn:hover {
+    background-color: #45a049;
+}
+
+/* Texto de redirección al login */
+.auth-redirect {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Estilo del enlace de redirección */
+.auth-redirect a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-redirect a:hover {
+    text-decoration: underline;
+}
