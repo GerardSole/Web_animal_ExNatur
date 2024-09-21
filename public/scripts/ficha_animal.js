@@ -683,45 +683,74 @@ function enviarRespuesta(messageId, animal) {
 
 
 
-
+// Función para enviar un mensaje principal
 function enviarMensaje(animal) {
-    const messageInput = document.getElementById('discussion-input'); // Asegúrate de que este ID es correcto
-    const message = messageInput.value.trim();  // Elimina los espacios en blanco al principio y al final
+    const messageInput = document.getElementById('discussion-input');
+    const messageText = messageInput.value.trim();
     const username = localStorage.getItem('username'); // Obtener el nombre del usuario
 
-    console.log("Mensaje:", message);  // Imprime el mensaje en la consola
-    console.log("Usuario:", username);  // Imprime el nombre de usuario en la consola
+    // Verificar si el usuario está logueado
+    if (!username) {
+        alert('Debes estar logueado para enviar mensajes.');
+        return;
+    }
 
-    if (!message) {
+    // Verificar si el mensaje no está vacío
+    if (!messageText) {
         alert('No puedes enviar un mensaje vacío.');
         return;
     }
 
-    if (!username) {
-        alert('No se ha identificado el usuario. Por favor, inicia sesión.');
-        return;
-    }
-
+    // Enviar el mensaje
     fetch('/api/messages', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ animal, username, message }),
+        body: JSON.stringify({ animal, username, message: messageText }),
     })
         .then(response => response.json())
         .then(newMessage => {
             const discussionComments = document.getElementById('discussion-comments');
+
+            // Crear el nuevo mensaje dinámicamente
             const messageDiv = document.createElement('div');
             messageDiv.classList.add('comment');
             messageDiv.innerHTML = `
-            <strong>${newMessage.username}</strong> (${new Date(newMessage.createdAt).toLocaleString()}):
+            <div class="comment-header">
+                <strong>${newMessage.username}</strong> (${new Date(newMessage.createdAt).toLocaleString()}):
+            </div>
             <p>${newMessage.message}</p>
+            <button class="reply-btn" data-message-id="${newMessage._id}">🔄 Responder</button>
+            <div class="reply-section" id="reply-section-${newMessage._id}" style="display: none;">
+                <textarea id="reply-input-${newMessage._id}" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+                <button class="send-reply-btn" onclick="enviarRespuesta('${newMessage._id}', '${animal}')">Enviar Respuesta</button>
+            </div>
+            <div class="replies" id="replies-${newMessage._id}">
+                <!-- Aquí se mostrarán las respuestas -->
+            </div>
         `;
-            discussionComments.prepend(messageDiv);
-            messageInput.value = '';  // Limpiar el campo de entrada
+            discussionComments.prepend(messageDiv); // Añadir el mensaje al principio
+
+            // Limpiar el campo de entrada
+            messageInput.value = '';
+
+            // Añadir el event listener para el botón de responder en el nuevo mensaje
+            addReplyEventListeners(newMessage._id);
         })
         .catch(error => console.error('Error al enviar el mensaje:', error));
+}
+
+// Función para añadir el event listener al botón de "Responder"
+function addReplyEventListeners(messageId) {
+    const replyButton = document.querySelector(`.reply-btn[data-message-id="${messageId}"]`);
+
+    if (replyButton) {
+        replyButton.addEventListener('click', () => {
+            const replySection = document.getElementById(`reply-section-${messageId}`);
+            replySection.style.display = replySection.style.display === 'none' ? 'block' : 'none';
+        });
+    }
 }
 
 

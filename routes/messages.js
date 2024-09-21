@@ -67,6 +67,29 @@ router.post('/reply', async (req, res) => {
     }
 });
 
+// Ruta para agregar un nuevo mensaje
+router.post('/api/messages', async (req, res) => {
+    const { animal, username, message } = req.body;
+
+    // Verificar si todos los campos están presentes
+    if (!animal || !username || !message) {
+        return res.status(400).json({ message: 'Todos los campos son obligatorios' });
+    }
+
+    try {
+        const newMessage = new Message({
+            animal,
+            username,
+            message,
+            createdAt: new Date(),
+        });
+
+        await newMessage.save();
+        res.status(201).json(newMessage);
+    } catch (error) {
+        res.status(500).json({ message: 'Error al guardar el mensaje', error });
+    }
+});
 
 
 module.exports = router;
