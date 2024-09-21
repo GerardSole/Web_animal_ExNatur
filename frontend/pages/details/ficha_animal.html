@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica - Animal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+    <link rel="stylesheet" href="../../css/ficha_animal.css"> <!-- Estilo CSS para la ficha técnica -->
+    <script src="../../scripts/ficha_animal.js" defer></script> <!-- JavaScript que maneja la carga dinámica -->
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="animal-title">Ficha Técnica</h1>
+    </header>
+
+    <!-- Sección donde se cargará la información dinámica del animal -->
+    <section class="ficha-tecnica">
+        <div class="animal-content">
+            <!-- Sección de imágenes del animal -->
+            <div class="animal-images">
+                <!-- Las imágenes serán insertadas aquí dinámicamente -->
+            </div>
+
+            <!-- Sección de información del animal -->
+            <div class="animal-info">
+                <h2 id="animal-name">Nombre del Animal</h2>
+                <ul id="animal-details">
+                    <!-- Detalles del animal insertados dinámicamente -->
+                </ul>
+            </div>
+
+            <!-- Sección del foro -->
+            <div class="animal-forum">
+                <h3>Foro de Discusión</h3>
+                <textarea id="discussion-input" placeholder="Escribe tu comentario..." rows="4"></textarea>
+                <button id="submit-comment">Enviar</button>
+
+                <div id="discussion-comments">
+                    <!-- Comentarios insertados dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

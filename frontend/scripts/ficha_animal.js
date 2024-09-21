@@ -490,8 +490,6 @@ const animales = {
 
 };
 
-let currentSlide = 0; // Variable para rastrear la imagen actual
-
 // Función para cargar los datos del animal
 function cargarFichaAnimal() {
     const params = new URLSearchParams(window.location.search);
@@ -504,26 +502,16 @@ function cargarFichaAnimal() {
         document.getElementById('animal-title').textContent = `Ficha Técnica: ${animal.name}`;
         document.getElementById('animal-name').textContent = animal.name;
 
-        // Crear el carrusel de imágenes
-        const carousel = document.getElementById('carousel');
-        carousel.innerHTML = ''; // Limpiar cualquier contenido previo del carrusel
+        // Crear la fila de imágenes
+        const imagesContainer = document.querySelector('.animal-images');
+        imagesContainer.innerHTML = ''; // Limpiar cualquier contenido previo
 
-        // Insertar imágenes en el carrusel
-        animal.img.forEach((imgSrc, index) => {
-            const animalCard = document.createElement('div');
-            animalCard.classList.add('animal-card');
-
-            // Crear contenedor de la imagen
-            const imgContainer = document.createElement('div');
-            imgContainer.classList.add('animal-card-img');
-            const img = document.createElement('img');
-            img.src = imgSrc;
-            img.alt = animal.name;
-            img.style.display = index === 0 ? 'block' : 'none'; // Solo la primera visible
-
-            imgContainer.appendChild(img);
-            animalCard.appendChild(imgContainer);
-            carousel.appendChild(animalCard);
+        // Insertar imágenes en la fila
+        animal.img.forEach(imgSrc => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imgSrc;
+            imgElement.alt = animal.name;
+            imagesContainer.appendChild(imgElement);
         });
 
         // Agregar los detalles del animal
@@ -541,13 +529,40 @@ function cargarFichaAnimal() {
     }
 }
 
-// Función para mover el carrusel hacia la izquierda o derecha
-function moveSlide(n) {
-    const images = document.querySelectorAll('.animal-card img');
-    images[currentSlide].style.display = 'none'; // Ocultar la imagen actual
-    currentSlide = (currentSlide + n + images.length) % images.length; // Calcular el nuevo índice
-    images[currentSlide].style.display = 'block'; // Mostrar la nueva imagen
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const commentsContainer = document.getElementById('discussion-comments');
+    const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+
+    // Cargar comentarios guardados al cargar la página
+    storedComments.forEach(comment => {
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.textContent = comment;
+        commentsContainer.appendChild(newComment);
+    });
+
+    document.getElementById('submit-comment').addEventListener('click', function () {
+        const input = document.getElementById('discussion-input');
+
+        if (input.value.trim() !== '') {
+            // Crear un nuevo comentario
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            newComment.textContent = input.value;
+
+            // Añadir el nuevo comentario al contenedor de comentarios
+            commentsContainer.appendChild(newComment);
+
+            // Guardar el comentario en localStorage
+            storedComments.push(input.value);
+            localStorage.setItem('comments', JSON.stringify(storedComments));
+
+            // Limpiar el campo de texto
+            input.value = '';
+        }
+    });
+});
+
 
 // Ejecutar la función cuando la página cargue
 window.onload = cargarFichaAnimal;

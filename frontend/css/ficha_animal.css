@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Ficha técnica del animal */
+.ficha-tecnica {
+    display: flex;
+    flex-direction: column;
+    /* Colocar todo en una columna */
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    /* Evitar desbordamiento por padding */
+}
+
+/* Fila de imágenes */
+.animal-images {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    /* Las imágenes se ajustan a la fila sin desbordarse */
+}
+
+.animal-images img {
+    width: 400px;
+    /* Ajustamos el tamaño para que quepan más fácilmente */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.animal-images img:hover {
+    transform: scale(1.1);
+    /* Efecto de zoom al pasar el ratón */
+}
+
+/* Contenedor para la segunda fila (información + foro debajo de las imágenes) */
+.animal-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    /* Espacio entre las imágenes y la fila de contenido */
+    flex-wrap: wrap;
+    /* Para asegurarnos de que las columnas se apilen si la pantalla es pequeña */
+    box-sizing: border-box;
+    /* Evitar desbordamiento */
+}
+
+/* Información del animal alineada a la izquierda */
+.animal-info {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    /* Ahora ocupa el 30% del ancho */
+    box-sizing: border-box;
+}
+
+.animal-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.animal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.animal-info ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Foro de discusión alineado a la derecha */
+.animal-forum {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    /* Ahora ocupa el 70% del ancho */
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    /* Forzar palabras largas a romperse */
+    word-wrap: break-word;
+    /* Forzar palabras largas a ajustarse */
+}
+
+.animal-forum h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#discussion-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#submit-comment {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #00796b;
+}
+
+#discussion-comments {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+    /* Forzar palabras largas a ajustarse */
+}
