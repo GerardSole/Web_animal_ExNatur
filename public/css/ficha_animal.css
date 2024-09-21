@@ -43,9 +43,9 @@ header h1 {
 }
 
 .animal-images img {
-    width: 400px;
+    width: 340px;
     /* Ajustamos el tamaño para que quepan más fácilmente */
-    height: 400px;
+    height: 340px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

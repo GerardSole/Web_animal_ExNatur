@@ -1,12 +1,13 @@
 // Datos de los animales
 const animales = {
-    'jerbo': {
+    'meriones_unguiculatus': {
         name: 'Jerbo (Meriones unguiculatus)',
         img: [
             '../../img/meriones_unguiculatus.jpg',
             '../../img/meriones_unguiculatus_2.webp',
             '../../img/meriones_unguiculatus_3.jpg',
-            '../../img/meriones_unguiculatus_4.jpg'
+            '../../img/meriones_unguiculatus_4.jpg',
+            '../../img/meriones_unguiculatus_5.jpg'
         ],
         details: [
             'Familia: Muridae',
@@ -18,10 +19,14 @@ const animales = {
             'Comportamiento: Activo y social, vive en grupos pequeños.'
         ]
     },
-    'axolote': {
+    'ambystoma_mexicanum': {
         name: 'Axolote (Ambystoma mexicanum)',
         img: [
             '../../img/ambystoma_mexicanum.jpg',
+            '../../img/ambystoma_mexicanum_2.jpg',
+            '../../img/ambystoma_mexicanum_3.jpeg',
+            '../../img/ambystoma_mexicanum_4.jpg',
+            '../../img/ambystoma_mexicanum_5.jpeg',
         ],
         details: [
             'Familia: Ambystomatidae',
@@ -36,7 +41,11 @@ const animales = {
     'gecko_leopardo': {
         name: 'Gecko Leopardo (Eublepharis macularius)',
         img: [
-            '../../img/eublepharis-macularius.webp',
+            '../../img/eublepharis_macularius.webp',
+            '../../img/eublepharis_macularius_2.jpg',
+            '../../img/eublepharis_macularius_3.jpeg',
+            '../../img/eublepharis_macularius_4.png',
+            '../../img/eublepharis_macularius_5.jpg',
         ],
         details: [
             'Familia: Eublepharidae',
@@ -52,6 +61,10 @@ const animales = {
         name: 'Dragón Barbudo (Pogona vitticeps)',
         img: [
             '../../img/pogona_vitticeps.jpg',
+            '../../img/pogona_vitticeps_2.jpg',
+            '../../img/pogona_vitticeps_3.webp',
+            '../../img/pogona_vitticeps_4.jpg',
+            '../../img/pogona_vitticeps_5.jpg',
         ],
         details: [
             'Familia: Agamidae',
@@ -67,6 +80,10 @@ const animales = {
         name: 'Iguana Verde (Iguana iguana)',
         img: [
             '../../img/iguana_iguana.jpg',
+            '../../img/iguana_iguana_2.webp',
+            '../../img/iguana_iguana_3.webp',
+            '../../img/iguana_iguana_4.jpg',
+            '../../img/iguana_iguana_5.jpg',
         ],
         details: [
             'Familia: Iguanidae',
@@ -82,6 +99,10 @@ const animales = {
         name: 'Camaleón Velado (Chamaeleo calyptratus)',
         img: [
             '../../img/chamaeleo_calyptratus.jpg',
+            '../../img/chamaeleo_calyptratus_2.jpg',
+            '../../img/chamaeleo_calyptratus_3.webp',
+            '../../img/chamaeleo_calyptratus_4.jpg',
+            '../../img/chamaeleo_calyptratus_5.jpg',
         ],
         details: [
             'Familia: Chamaeleonidae',
@@ -97,6 +118,11 @@ const animales = {
         name: 'Boa Constrictor (Boa constrictor)',
         img: [
             '../../img/boa_constrictor.jpg',
+            '../../img/boa_constrictor_2.webp',
+            '../../img/boa_constrictor_5.jpg',
+            '../../img/boa_constrictor_4.avif',
+            '../../img/boa_constrictor_3.webp',
+
         ],
         details: [
             'Familia: Boidae',
@@ -112,6 +138,10 @@ const animales = {
         name: 'Serpiente del Maizal (Pantherophis guttatus)',
         img: [
             '../../img/pantherophis_guttatus.jpg',
+            '../../img/pantherophis_guttatus_2.jpg',
+            '../../img/pantherophis_guttatus_3.webp',
+            '../../img/pantherophis_guttatus_4.avif',
+            '../../img/pantherophis_guttatus_5.jpg',
         ],
         details: [
             'Familia: Colubridae',
@@ -127,6 +157,10 @@ const animales = {
         name: 'Serpiente Rey (Lampropeltis getula)',
         img: [
             '../../img/lampropeltis_getula.jpg',
+            '../../img/lampropeltis_getula_2.webp',
+            '../../img/lampropeltis_getula_3.jpg',
+            '../../img/lampropeltis_getula_4.jpg',
+            '../../img/lampropeltis_getula_5.jpg',
         ],
         details: [
             'Familia: Colubridae',
@@ -142,6 +176,10 @@ const animales = {
         name: 'Tortuga Rusa (Testudo horsfieldii)',
         img: [
             '../../img/testudo_horsfieldii.jpeg',
+            '../../img/testudo_horsfieldii_3.jpg',
+            '../../img/testudo_horsfieldii_2.jpg',
+            '../../img/testudo_horsfieldii_4.jpg',
+            '../../img/testudo_horsfieldii_5.jpg',
         ],
         details: [
             'Familia: Testudinidae',
@@ -157,6 +195,10 @@ const animales = {
         name: 'Tortuga de Orejas Rojas (Trachemys scripta elegans)',
         img: [
             '../../img/trachemys_scripta_elegans.jpg',
+            '../../img/trachemys_scripta_elegans_2.jpg',
+            '../../img/trachemys_scripta_elegans_5.jpg',
+            '../../img/trachemys_scripta_elegans_4.jpg',
+            '../../img/trachemys_scripta_elegans_3.jpeg',
         ],
         details: [
             'Familia: Emydidae',
