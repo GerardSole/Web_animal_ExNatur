@@ -617,6 +617,10 @@ const animales = {
         name: 'Rana Toro Africana (Pyxicephalus adspersus)',
         img: [
             '../../img/pyxicephalus_adspersus.jpg',
+            '../../img/pyxicephalus_adspersus_2.jpg',
+            '../../img/pyxicephalus_adspersus_3.jpg',
+            '../../img/pyxicephalus_adspersus_4.jpeg',
+            '../../img/pyxicephalus_adspersus_5.webp',
         ],
         details: [
             'Familia: Pyxicephalidae',
