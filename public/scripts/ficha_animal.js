@@ -530,6 +530,408 @@ const animales = {
         ]
     },
 
+    //RANAS
+
+    'agalychnis_callidryas': {
+        name: 'Rana de Ojos Rojos (Agalychnis callidryas)',
+        img: [
+            '../../img/agalychnis_callidryas.jpeg',
+        ],
+        details: [
+            'Familia: Phyllomedusidae',
+            'Distribución: América Central, desde México hasta Panamá.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (grillos, polillas, moscas).',
+            'Esperanza de vida: 5-10 años en cautiverio.',
+            'Tamaño: 5-7 cm de largo.',
+            'Comportamiento: Nocturna, arborícola y pacífica.'
+        ]
+    },
+
+    'ceratophrys_ornata': {
+        name: 'Rana Pacman (Ceratophrys ornata)',
+        img: [
+            '../../img/ceratophrys_ornata.jpeg',
+        ],
+        details: [
+            'Familia: Ceratophryidae',
+            'Distribución: Argentina, Uruguay y Brasil.',
+            'Hábitat: Zonas húmedas y pantanosas.',
+            'Dieta: Carnívora (insectos, pequeños roedores, otros anfibios).',
+            'Esperanza de vida: 6-10 años en cautiverio.',
+            'Tamaño: 10-15 cm de largo.',
+            'Comportamiento: Sedentaria, espera a que la presa pase cerca.'
+        ]
+    },
+
+    'dyscophus_guineti': {
+        name: 'Rana Tomate (Dyscophus guineti)',
+        img: [
+            '../../img/dyscophus_guineti.jpg',
+        ],
+        details: [
+            'Familia: Microhylidae',
+            'Distribución: Madagascar.',
+            'Hábitat: Bosques tropicales y sabanas.',
+            'Dieta: Insectívora (grillos, cucarachas, gusanos).',
+            'Esperanza de vida: 6-8 años en cautiverio.',
+            'Tamaño: 8-10 cm de largo.',
+            'Comportamiento: Terrestre, emite una secreción pegajosa cuando se siente amenazada.'
+        ]
+    },
+
+    'litoria_caerulea': {
+        name: 'Rana Arborícola Australiana (Litoria caerulea)',
+        img: [
+            '../../img/litoria_caerulea.png',
+        ],
+        details: [
+            'Familia: Pelodryadidae',
+            'Distribución: Australia, Nueva Guinea, Indonesia.',
+            'Hábitat: Bosques tropicales, áreas cercanas a cuerpos de agua.',
+            'Dieta: Insectívora (grillos, polillas, cucarachas).',
+            'Esperanza de vida: 10-20 años en cautiverio.',
+            'Tamaño: 8-10 cm de largo.',
+            'Comportamiento: Arborícola, tranquila y fácil de cuidar.'
+        ]
+    },
+
+    'pyxicephalus_adspersus': {
+        name: 'Rana Toro Africana (Pyxicephalus adspersus)',
+        img: [
+            '../../img/pyxicephalus_adspersus.jpg',
+        ],
+        details: [
+            'Familia: Pyxicephalidae',
+            'Distribución: África subsahariana.',
+            'Hábitat: Sabana, áreas cercanas a charcos temporales.',
+            'Dieta: Carnívora (insectos, roedores, aves, otros anfibios).',
+            'Esperanza de vida: 15-20 años en cautiverio.',
+            'Tamaño: 20-25 cm de largo.',
+            'Comportamiento: Agresiva y territorial, especialmente durante la reproducción.'
+        ]
+    },
+
+    'ameerega_trivittata': {
+        name: 'Rana Venenosa Rayada (Ameerega trivittata)',
+        img: [
+            '../../img/ameerega_trivittata.jpeg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Cuenca del Amazonas, desde Venezuela hasta Perú.',
+            'Hábitat: Bosques lluviosos tropicales.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 5-8 años en cautiverio.',
+            'Tamaño: 4-6 cm de largo.',
+            'Comportamiento: Diurna, activa y territorial.'
+        ]
+    },
+
+    'bombina_orientalis': {
+        name: 'Sapo Vientre de Fuego (Bombina orientalis)',
+        img: [
+            '../../img/bombina_orientalis.jfif',
+        ],
+        details: [
+            'Familia: Bombinatoridae',
+            'Distribución: China, Corea y partes de Rusia.',
+            'Hábitat: Zonas húmedas, como lagos y estanques.',
+            'Dieta: Insectívora (grillos, gusanos, pequeños invertebrados).',
+            'Esperanza de vida: 10-12 años en cautiverio.',
+            'Tamaño: 4-5 cm de largo.',
+            'Comportamiento: Semiacuático, emite un sonido característico cuando está amenazado.'
+        ]
+    },
+
+    'dendrobates_auratus': {
+        name: 'Rana Venenosa Verde y Negra (Dendrobates auratus)',
+        img: [
+            '../../img/dendrobates_auratus.jpg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: América Central, desde Nicaragua hasta Colombia.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños insectos).',
+            'Esperanza de vida: 6-10 años en cautiverio.',
+            'Tamaño: 3-5 cm de largo.',
+            'Comportamiento: Diurna y activa, vive en grupos pequeños.'
+        ]
+    },
+
+    'dendrobates_leucomelas': {
+        name: 'Rana Venenosa de Banda Amarilla (Dendrobates leucomelas)',
+        img: [
+            '../../img/dendrobates_leucomelas.jpg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Venezuela, Guyana y Colombia.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 7-12 años en cautiverio.',
+            'Tamaño: 3-4 cm de largo.',
+            'Comportamiento: Activa, territorial y muy vocal.'
+        ]
+    },
+
+    'epipedobates_anthonyi': {
+        name: 'Rana Venenosa de Anthony (Epipedobates anthonyi)',
+        img: [
+            '../../img/epipedobates_anthonyi.jpg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Ecuador y Perú.',
+            'Hábitat: Bosques lluviosos de tierras bajas.',
+            'Dieta: Insectívora (hormigas, pequeños invertebrados).',
+            'Esperanza de vida: 5-7 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Diurna y activa, emite vocalizaciones suaves.'
+        ]
+    },
+
+    'hyla_cinerea': {
+        name: 'Rana Arborícola Verde (Hyla cinerea)',
+        img: [
+            '../../img/hyla_cinerea.jpg',
+        ],
+        details: [
+            'Familia: Hylidae',
+            'Distribución: Sureste de Estados Unidos.',
+            'Hábitat: Pantanos, lagos y ríos lentos.',
+            'Dieta: Insectívora (mosquitos, polillas, grillos).',
+            'Esperanza de vida: 5-8 años en cautiverio.',
+            'Tamaño: 4-6 cm de largo.',
+            'Comportamiento: Arborícola y nocturna, se alimenta activamente por la noche.'
+        ]
+    },
+
+    'leptopelis_vermiculatus': {
+        name: 'Rana Ojos de Gato (Leptopelis vermiculatus)',
+        img: [
+            '../../img/leptopelis_vermiculatus.jpg',
+        ],
+        details: [
+            'Familia: Arthroleptidae',
+            'Distribución: Tanzania.',
+            'Hábitat: Bosques montañosos y tropicales.',
+            'Dieta: Insectívora (insectos, arañas, otros invertebrados).',
+            'Esperanza de vida: 6-8 años en cautiverio.',
+            'Tamaño: 5-8 cm de largo.',
+            'Comportamiento: Arborícola, activa durante la noche.'
+        ]
+    },
+
+    'leptodactylus_fallax': {
+        name: 'Rana Goliat (Leptodactylus fallax)',
+        img: [
+            '../../img/leptodactylus_fallax.jpg',
+        ],
+        details: [
+            'Familia: Leptodactylidae',
+            'Distribución: Caribe, principalmente Dominica y Montserrat.',
+            'Hábitat: Ríos, arroyos y áreas cercanas al agua.',
+            'Dieta: Carnívora (pequeños roedores, aves, invertebrados).',
+            'Esperanza de vida: 10-15 años en cautiverio.',
+            'Tamaño: Hasta 30 cm de largo.',
+            'Comportamiento: Diurna, muy territorial.'
+        ]
+    },
+
+    'mantella_aurantiaca': {
+        name: 'Mantella Dorada (Mantella aurantiaca)',
+        img: [
+            '../../img/mantella_aurantiaca.jpg',
+        ],
+        details: [
+            'Familia: Mantellidae',
+            'Distribución: Madagascar.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 5-8 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Diurna y terrestre, de colores brillantes.'
+        ]
+    },
+
+    'mantella_baroni': {
+        name: 'Mantella Baroni (Mantella baroni)',
+        img: [
+            '../../img/mantella_baroni.webp',
+        ],
+        details: [
+            'Familia: Mantellidae',
+            'Distribución: Madagascar.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 5-8 años en cautiverio.',
+            'Tamaño: 2-4 cm de largo.',
+            'Comportamiento: Terrestre y diurna, emite llamadas suaves.'
+        ]
+    },
+
+    'mantella_laevigata': {
+        name: 'Mantella Verde (Mantella laevigata)',
+        img: [
+            '../../img/mantella_laevigata.jpg',
+        ],
+        details: [
+            'Familia: Mantellidae',
+            'Distribución: Madagascar.',
+            'Hábitat: Bosques lluviosos tropicales.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 5-7 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Diurna, de colores brillantes para advertir a depredadores.'
+        ]
+    },
+
+    'microhyla_butleri': {
+        name: 'Rana Microhylida (Microhyla butleri)',
+        img: [
+            '../../img/microhyla_butleri.jpg',
+        ],
+        details: [
+            'Familia: Microhylidae',
+            'Distribución: Sudeste de Asia.',
+            'Hábitat: Arroyos, bosques tropicales y zonas pantanosas.',
+            'Dieta: Insectívora (pequeños insectos y otros invertebrados).',
+            'Esperanza de vida: 3-5 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Terrestre y nocturna, se oculta durante el día.'
+        ]
+    },
+
+    'oophaga_histrionica': {
+        name: 'Rana Venenosa Histriónica (Oophaga histrionica)',
+        img: [
+            '../../img/oophaga_histrionica.jpg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Colombia.',
+            'Hábitat: Bosques lluviosos de tierras bajas.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 5-8 años en cautiverio.',
+            'Tamaño: 3-4 cm de largo.',
+            'Comportamiento: Diurna, altamente territorial.'
+        ]
+    },
+
+    'oophaga_pumilio': {
+        name: 'Rana Flecha Roja (Oophaga pumilio)',
+        img: [
+            '../../img/oophaga_pumilio.jpg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: América Central, desde Nicaragua hasta Panamá.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños insectos).',
+            'Esperanza de vida: 4-6 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Diurna y terrestre, muy activa.'
+        ]
+    },
+
+    'phyllobates_bicolor': {
+        name: 'Rana Venenosa Bicolor (Phyllobates bicolor)',
+        img: [
+            '../../img/phyllobates_bicolor.jpeg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Colombia.',
+            'Hábitat: Bosques lluviosos de tierras bajas.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 5-10 años en cautiverio.',
+            'Tamaño: 4-5 cm de largo.',
+            'Comportamiento: Diurna, muy activa y territorial.'
+        ]
+    },
+
+    'phyllobates_terribilis': {
+        name: 'Rana Venenosa Dorada (Phyllobates terribilis)',
+        img: [
+            '../../img/phyllobates_terribilis.jpg',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Colombia.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños insectos).',
+            'Esperanza de vida: 10-15 años en cautiverio.',
+            'Tamaño: 4-6 cm de largo.',
+            'Comportamiento: Muy territorial y venenosa, secreta toxinas potentes.'
+        ]
+    },
+
+    'ranitomeya_imitator': {
+        name: 'Rana Imitadora (Ranitomeya imitator)',
+        img: [
+            '../../img/ranitomeya_imitator.jfif',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Perú.',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños invertebrados).',
+            'Esperanza de vida: 6-8 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Activa y diurna, imita otras especies de ranas venenosas para protección.'
+        ]
+    },
+
+    'ranitomeya_reticulata': {
+        name: 'Rana Venenosa Reticulada (Ranitomeya reticulata)',
+        img: [
+            '../../img/ranitomeya_reticulata.webp',
+        ],
+        details: [
+            'Familia: Dendrobatidae',
+            'Distribución: Cuenca del Amazonas (Perú, Brasil).',
+            'Hábitat: Bosques tropicales húmedos.',
+            'Dieta: Insectívora (hormigas, termitas, pequeños insectos).',
+            'Esperanza de vida: 5-7 años en cautiverio.',
+            'Tamaño: 2-3 cm de largo.',
+            'Comportamiento: Activa, pequeña y colorida, emite un canto agudo.'
+        ]
+    },
+
+    'theloderma_corticale': {
+        name: 'Rana Musgosa (Theloderma corticale)',
+        img: [
+            '../../img/theloderma_corticale.jpg',
+        ],
+        details: [
+            'Familia: Rhacophoridae',
+            'Distribución: Vietnam y China.',
+            'Hábitat: Bosques tropicales y zonas rocosas cercanas al agua.',
+            'Dieta: Insectívora (grillos, cucarachas, pequeños invertebrados).',
+            'Esperanza de vida: 5-10 años en cautiverio.',
+            'Tamaño: 6-8 cm de largo.',
+            'Comportamiento: Nocturna y arborícola, su piel tiene una textura similar al musgo.'
+        ]
+    },
+
+    'xenopus_laevis': {
+        name: 'Rana Africana de Uñas (Xenopus laevis)',
+        img: [
+            '../../img/xenopus_laevis.jpg',
+        ],
+        details: [
+            'Familia: Pipidae',
+            'Distribución: África subsahariana.',
+            'Hábitat: Lagos, estanques y ríos lentos.',
+            'Dieta: Carnívora (insectos, pequeños peces, crustáceos).',
+            'Esperanza de vida: 15-20 años en cautiverio.',
+            'Tamaño: 10-12 cm de largo.',
+            'Comportamiento: Totalmente acuática, utiliza sus patas traseras para nadar eficientemente.'
+        ]
+    },
+
 };
 
 document.addEventListener("DOMContentLoaded", () => {
