@@ -556,6 +556,11 @@ const animales = {
         name: 'Rana Pacman (Ceratophrys ornata)',
         img: [
             '../../img/ceratophrys_ornata.jpeg',
+            '../../img/ceratophrys_ornata.webp',
+            '../../img/ceratophrys_ornata_3.jpg',
+            '../../img/ceratophrys_ornata_4.jpg',
+            '../../img/ceratophrys_ornata_5.jpg',
+
         ],
         details: [
             'Familia: Ceratophryidae',
