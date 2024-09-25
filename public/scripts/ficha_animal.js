@@ -579,7 +579,7 @@ const animales = {
             '../../img/dyscophus_guineti.jpg',
             '../../img/dyscophus_guineti_2.jpg',
             '../../img/dyscophus_guineti_3.jpeg',
-            '../../img/dyscophus_guineti_5.jpeg',
+            '../../img/dyscophus_guineti_5.jpg',
             '../../img/dyscophus_guineti_4.jpeg',
         ],
         details: [
@@ -597,6 +597,10 @@ const animales = {
         name: 'Rana Arborícola Australiana (Litoria caerulea)',
         img: [
             '../../img/litoria_caerulea.png',
+            '../../img/litoria_caerulea_2.jpg',
+            '../../img/litoria_caerulea_3.jpg',
+            '../../img/litoria_caerulea_4.png',
+            '../../img/litoria_caerulea_5.jpg',
         ],
         details: [
             'Familia: Pelodryadidae',
