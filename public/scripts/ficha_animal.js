@@ -577,6 +577,10 @@ const animales = {
         name: 'Rana Tomate (Dyscophus guineti)',
         img: [
             '../../img/dyscophus_guineti.jpg',
+            '../../img/dyscophus_guineti_2.jpg',
+            '../../img/dyscophus_guineti_3.jpeg',
+            '../../img/dyscophus_guineti_5.jpeg',
+            '../../img/dyscophus_guineti_4.jpeg',
         ],
         details: [
             'Familia: Microhylidae',
