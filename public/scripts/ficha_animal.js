@@ -530,12 +530,16 @@ const animales = {
         ]
     },
 
-    //RANAS
+    //RANAS -------------------------------------------------------
 
     'agalychnis_callidryas': {
         name: 'Rana de Ojos Rojos (Agalychnis callidryas)',
         img: [
             '../../img/agalychnis_callidryas.jpeg',
+            '../../img/agalychnis_callidryas_2.jpg',
+            '../../img/agalychnis_callidryas_3.png',
+            '../../img/agalychnis_callidryas_4.jpg',
+            '../../img/agalychnis_callidryas_5.jpeg',
         ],
         details: [
             'Familia: Phyllomedusidae',
