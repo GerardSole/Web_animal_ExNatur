@@ -481,3 +481,17 @@ h2 {
 .navbar .icon {
     margin-right: 10px;
 }
+
+.navbar a i {
+    margin-left: 50px;
+    color: #333;
+    /* Cambia el color según lo que prefieras */
+    margin-right: 20px;
+    /* Espacio entre el ícono y el login */
+    transition: color 0.3s ease;
+}
+
+.navbar a i:hover {
+    color: #efb810;
+    /* Color de hover (efecto al pasar el cursor) */
+}
