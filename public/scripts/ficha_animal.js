@@ -301,7 +301,9 @@ const animales = {
             'Dieta: Carnívoro (larvas de insectos, pequeños crustáceos).',
             'Esperanza de vida: 3-5 años en cautiverio.',
             'Tamaño: 6-8 cm de largo.',
-            'Comportamiento: Territorial y agresivo con otros machos, mejor mantenerlo solo o con peces compatibles.'
+            'Comportamiento: Territorial y agresivo con otros machos, mejor mantenerlo solo o con peces compatibles.',
+            'pH: 6.0-7.5',
+            'Temperatura: 24-30°C'
         ]
     },
     'paracheirodon_innesi': {
@@ -316,7 +318,9 @@ const animales = {
             'Dieta: Omnívoro (alimentos pequeños, como insectos y plantas).',
             'Esperanza de vida: 5 años en cautiverio.',
             'Tamaño: 3-4 cm de largo.',
-            'Comportamiento: Pacífico y social, debe mantenerse en grupos.'
+            'Comportamiento: Pacífico y social, debe mantenerse en grupos.',
+            'pH: 5.0-7.0',
+            'Temperatura: 20-26°C'
         ]
     },
     'pterophyllum_scalare': {
@@ -331,7 +335,9 @@ const animales = {
             'Dieta: Omnívoro (insectos, crustáceos, algas).',
             'Esperanza de vida: 10-15 años en cautiverio.',
             'Tamaño: 15 cm de largo.',
-            'Comportamiento: Territorial, pero generalmente pacífico en acuarios comunitarios grandes.'
+            'Comportamiento: Territorial, pero generalmente pacífico en acuarios comunitarios grandes.',
+            'pH: 6.0-7.4',
+            'Temperatura: 24-30°C'
         ]
     },
     'poecilia_reticulata': {
@@ -346,7 +352,9 @@ const animales = {
             'Dieta: Omnívoro (algas, pequeños insectos, crustáceos).',
             'Esperanza de vida: 2-3 años en cautiverio.',
             'Tamaño: 3-6 cm de largo.',
-            'Comportamiento: Pacífico y activo, ideal para acuarios comunitarios.'
+            'Comportamiento: Pacífico y activo, ideal para acuarios comunitarios.',
+            'pH: 7.0-8.2',
+            'Temperatura: 22-28°C'
         ]
     },
     'poecilia_sphenops': {
@@ -361,7 +369,9 @@ const animales = {
             'Dieta: Omnívoro (algas, plantas, pequeños invertebrados).',
             'Esperanza de vida: 3-5 años en cautiverio.',
             'Tamaño: 4-10 cm de largo.',
-            'Comportamiento: Pacífico, ideal para acuarios comunitarios.'
+            'Comportamiento: Pacífico, ideal para acuarios comunitarios.',
+            'pH: 7.0-8.5',
+            'Temperatura: 24-28°C'
         ]
     },
     'xiphophorus_maculatus': {
@@ -376,7 +386,9 @@ const animales = {
             'Dieta: Omnívoro (algas, pequeños invertebrados).',
             'Esperanza de vida: 3-5 años en cautiverio.',
             'Tamaño: 4-6 cm de largo.',
-            'Comportamiento: Pacífico y sociable, ideal para acuarios comunitarios.'
+            'Comportamiento: Pacífico y sociable, ideal para acuarios comunitarios.',
+            'pH: 7.0-8.2',
+            'Temperatura: 20-26°C'
         ]
     },
     'puntius_titteya': {
@@ -391,7 +403,9 @@ const animales = {
             'Dieta: Omnívoro (algas, pequeños invertebrados).',
             'Esperanza de vida: 4-5 años en cautiverio.',
             'Tamaño: 4-5 cm de largo.',
-            'Comportamiento: Pacífico, pero puede ser territorial durante la reproducción.'
+            'Comportamiento: Pacífico, pero puede ser territorial durante la reproducción.',
+            'pH: 6.0-8.0',
+            'Temperatura: 22-27°C'
         ]
     },
     'corydoras_panda': {
@@ -406,7 +420,9 @@ const animales = {
             'Dieta: Omnívoro (larvas de insectos, algas).',
             'Esperanza de vida: 5-10 años en cautiverio.',
             'Tamaño: 5-6 cm de largo.',
-            'Comportamiento: Pacífico y social, debe mantenerse en grupos.'
+            'Comportamiento: Pacífico y social, debe mantenerse en grupos.',
+            'pH: 6.0-7.5',
+            'Temperatura: 22-26°C'
         ]
     },
     'corydoras_aeneus': {
@@ -421,7 +437,9 @@ const animales = {
             'Dieta: Omnívoro (larvas de insectos, algas).',
             'Esperanza de vida: 5-10 años en cautiverio.',
             'Tamaño: 6-7 cm de largo.',
-            'Comportamiento: Pacífico y social, debe mantenerse en grupos.'
+            'Comportamiento: Pacífico y social, debe mantenerse en grupos.',
+            'pH: 6.0-7.8',
+            'Temperatura: 22-28°C'
         ]
     },
     'paracheirodon_axelrodi': {
@@ -436,7 +454,9 @@ const animales = {
             'Dieta: Omnívoro (pequeños insectos y algas).',
             'Esperanza de vida: 4-5 años en cautiverio.',
             'Tamaño: 3-5 cm de largo.',
-            'Comportamiento: Pacífico y social, mejor mantenerlo en grupos.'
+            'Comportamiento: Pacífico y social, mejor mantenerlo en grupos.',
+            'pH: 4.5-7.0',
+            'Temperatura: 23-27°C'
         ]
     },
     'danio_rerio': {
@@ -451,7 +471,9 @@ const animales = {
             'Dieta: Omnívoro (algas, pequeños invertebrados).',
             'Esperanza de vida: 2-3 años en cautiverio.',
             'Tamaño: 4-5 cm de largo.',
-            'Comportamiento: Activo y social, ideal para acuarios comunitarios.'
+            'Comportamiento: Activo y social, ideal para acuarios comunitarios.',
+            'pH: 6.5-7.5',
+            'Temperatura: 18-24°C'
         ]
     },
     'trichopodus_leeri': {
@@ -466,7 +488,9 @@ const animales = {
             'Dieta: Omnívoro (algas, insectos pequeños).',
             'Esperanza de vida: 5-7 años en cautiverio.',
             'Tamaño: 12 cm de largo.',
-            'Comportamiento: Pacífico, aunque los machos pueden ser territoriales.'
+            'Comportamiento: Pacífico, aunque los machos pueden ser territoriales.',
+            'pH: 6.0-8.0',
+            'Temperatura: 24-28°C'
         ]
     },
     'otocinclus': {
@@ -481,7 +505,9 @@ const animales = {
             'Dieta: Herbívoro (algas).',
             'Esperanza de vida: 3-5 años en cautiverio.',
             'Tamaño: 4-5 cm de largo.',
-            'Comportamiento: Pacífico, ideal para acuarios comunitarios, ayuda a controlar las algas.'
+            'Comportamiento: Pacífico, ideal para acuarios comunitarios, ayuda a controlar las algas.',
+            'pH: 6.0-7.5',
+            'Temperatura: 22-28°C'
         ]
     },
     'symphysodon': {
@@ -496,7 +522,9 @@ const animales = {
             'Dieta: Omnívoro (pequeños insectos, crustáceos, algas).',
             'Esperanza de vida: 10-15 años en cautiverio.',
             'Tamaño: 15-20 cm de largo.',
-            'Comportamiento: Pacífico, pero requiere cuidados específicos.'
+            'Comportamiento: Pacífico, pero requiere cuidados específicos.',
+            'pH: 5.0-7.0',
+            'Temperatura: 26-30°C'
         ]
     },
     'cyprinus_carpio': {
@@ -511,7 +539,9 @@ const animales = {
             'Dieta: Omnívoro (plantas acuáticas, insectos, pequeños invertebrados).',
             'Esperanza de vida: 20-40 años en cautiverio.',
             'Tamaño: 40-100 cm de largo, dependiendo de las condiciones.',
-            'Comportamiento: Pacífico, pero requiere grandes cuerpos de agua.'
+            'Comportamiento: Pacífico, pero requiere grandes cuerpos de agua.',
+            'pH: 6.5-9.0',
+            'Temperatura: 10-28°C'
         ]
     },
     'amphiprion_ocellaris': {
@@ -526,7 +556,9 @@ const animales = {
             'Dieta: Omnívoro (algas, pequeños crustáceos, zooplancton).',
             'Esperanza de vida: 6-10 años en cautiverio.',
             'Tamaño: 8-12 cm de largo.',
-            'Comportamiento: Pacífico, pero puede volverse territorial cerca de anémonas.'
+            'Comportamiento: Pacífico, pero puede volverse territorial cerca de anémonas.',
+            'pH: 8.0-8.4',
+            'Temperatura: 24-28°C'
         ]
     },
 
